@@ -1,41 +1,109 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  :root {
-    font-family: "Alice", serif;
-    line-height: 150%;
-    color: #573a37;
-  }
-  
-  body {
-    background-image: url(assets/pg.jpg);
-    background-size: cover;
-  }
-  
-  #page {
-    width: 800px;
-    padding: 24px;
-    background-color: #f0e8c2;
-    border-radius: 24px;
-    margin: 48px auto;
-  }
-  
-  img {
-    border-radius: 16px;
-  }
-  
-  h1,
-  h2 {
-    color: #291b1a;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Alice", serif;
+  line-height: 1.5;
+  color: #573a37;
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(assets/pg.jpg);
+  background-size: cover;
+}
+
+#page {
+  width: 100%;
+  max-width: 80rem;
+  padding: 2.4rem;
+  background-color: #f0e8c2;
+  border-radius: 2.4rem;
+  margin: 4.8rem auto;
+}
+
+img {
+  width: 100%;
+  border-radius: 1.6rem;
+}
+
+main {
+  padding: 2.4rem;
+}
+
+section + section {
+  margin-top: 2.4rem;
+}
+
+#about p + p {
+  margin-top: 1.2rem;
+}
+
+h1, h2 {
+  color: #291b1a;
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  line-height: 1.4;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+@media (max-width: 76.8rem) {
   h1 {
-    line-height: 140%;
-    font-size: 40px;
+    font-size: 3.2rem;
   }
-  
+
   h2 {
-    font-size: 24px;
+    font-size: 2rem;
   }
-  
+
+  #page {
+    padding: 1.6rem;
+  }
+
+  main {
+    padding: 1.6rem;
+  }
+
+  section + section {
+    margin-top: 1.6rem;
+  }
+
+  #about p + p {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  #page {
+    padding: 1.2rem;
+  }
+
+  main {
+    padding: 1.2rem;
+  }
+
+  section + section {
+    margin-top: 1.2rem;
+  }
+
+  #about p + p {
+    margin-top: 0.8rem;
+  }
+}
