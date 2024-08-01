@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-size: 62.5%;
+  }
+
+  body {
+    background-color: #F5F4F0;
+  }
+
+  h3 {
+    color: #E1624F;
+  }
+
+  h1, h2 {
+    color: #1B1B1B;
+  }
+
+  img {
+    border-radius: 2.8rem;
+  }
+
+  footer img {
+    vertical-align: middle;
+  }
+
