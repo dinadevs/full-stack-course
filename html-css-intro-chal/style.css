@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f5f4f0;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 4.8rem 8rem;
+}
+
+#page img {
+  width: 100%;
+  border-radius: 2.8rem;
+}
+
+header p,
+footer p {
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 4rem;
+}
+
+header p {
+  font-style: italic;
+  margin-top: 2.4rem;
+  margin-bottom: 4.4rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #D9D9D9;
+  margin: 4.0rem 0;
+}
+
+section {
+  margin-bottom: 4.8rem;
+}
+
+.gallery section:first-child img {
+  height: 35rem;
+  margin-top: 6.4rem;
+  object-fit: cover;
+}
+
+h3 {
+  font-size: 2.8rem;
+  color: #e1624f;
+}
+
+h1 {
+  margin-top: 0.8rem;
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+h1,
+h2 {
+  color: #1b1b1b;
+}
+
+h4 {
+  margin-top: 1.6rem;
+}
+
+ul {
+  font-weight: bold;
+  padding-left: 1.8rem;
+}
+
+ul li {
+  color: #0c51a7;
+}
+
+ul li::marker {
+  color: black;
+}
+
+footer img {
+  vertical-align: middle;
+}
+
+footer p + p {
+  margin-top: 6.5rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 2rem; 
+    font-size: 1.4;
+  }
+
+  .divider {
+    margin: 2rem 0; 
+  }
+
+  .gallery section:first-child img {
+    height: auto; 
+    width: 100%; 
+  }
+}
