@@ -5,6 +5,8 @@
 }
 
 :root {
+    font-size: 62.5%;
+
     --brand-color:#EF5F4C;
     --bg-color:#FFF;
     --surface-color:#F5F5F5;
@@ -24,4 +26,21 @@ body {
     font: var(--txt);
     color: var(--txt-color-secondary);
     background-color: var(--bg-color);
+
+    width: 100%;
+    padding-inline: 3.2rem;
+    margin-inline: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--brand-color);
+}
+
+.bgSurfaceColor {
+    background-color: var(--surface-color);
 }
