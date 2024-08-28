@@ -7,6 +7,10 @@ nav {
     padding-block: 2.0rem;
 } 
 
+nav .container {
+    padding-inline: 3.2rem;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -24,7 +28,7 @@ nav ul {
 
 nav ul li:last-child img{
     width: 4.0rem;
-    height: 4.0;
+    height: 4.0rem;
     border-radius: 50%;
     object-fit: cover;
 }

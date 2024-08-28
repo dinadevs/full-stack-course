@@ -27,8 +27,7 @@ body {
     color: var(--txt-color-secondary);
     background-color: var(--bg-color);
 
-    width: 100%;
-    padding-inline: 3.2rem;
+    width: 100%;    
     margin-inline: auto;
 }
 
@@ -39,6 +38,10 @@ a {
 
 a:hover {
     color: var(--brand-color);
+}
+
+.container {
+    padding-inline: 3.2rem;
 }
 
 .bgSurfaceColor {
