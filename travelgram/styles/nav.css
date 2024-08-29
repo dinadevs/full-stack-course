@@ -12,7 +12,6 @@ nav .container {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     align-items: center;
     gap: 2.4rem;
@@ -29,7 +28,5 @@ nav ul {
 nav ul li:last-child img{
     width: 4.0rem;
     height: 4.0rem;
-    border-radius: 50%;
-    object-fit: cover;
 }
 

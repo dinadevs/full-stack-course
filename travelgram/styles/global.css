@@ -31,6 +31,12 @@ body {
     margin-inline: auto;
 }
 
+.imgBorder {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--brand-color);
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -46,4 +52,8 @@ a:hover {
 
 .bgSurfaceColor {
     background-color: var(--surface-color);
+}
+
+ ul {
+    list-style-type: none;
 }

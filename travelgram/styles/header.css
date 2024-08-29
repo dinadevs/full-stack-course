@@ -12,9 +12,6 @@ header .container {
 #profile img{
     width: 17.6rem;
     height: 17.6rem;
-    border-radius: 50%;
-    border: 2px solid var(--brand-color);
-    object-fit: cover;
 }
 
 #profile {
@@ -35,7 +32,6 @@ header .container {
 #info {
     display: flex;
     width: 28.0rem;
-    list-style: none;
     flex-direction: column;
     gap: 1.6rem;
 }
