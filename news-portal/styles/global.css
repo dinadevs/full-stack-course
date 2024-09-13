@@ -46,16 +46,17 @@ h3 {
   font: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 128rem;
   padding-inline: 3.2rem;
   margin-inline: auto;
 }
 
-.grid {
-  display: grid;
+main {
+  margin-block: 4.0rem;
 }
 
-.grid-flow-col {
-  grid-auto-flow: column;
-}
