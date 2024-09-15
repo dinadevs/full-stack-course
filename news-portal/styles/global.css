@@ -60,3 +60,14 @@ main {
   margin-block: 4.0rem;
 }
 
+.contentTag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: .4rem .8rem;
+  border-radius: .4rem;
+  font: 500 1.0rem/1.2 var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--txt-color-primary);
+  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.251);
+}

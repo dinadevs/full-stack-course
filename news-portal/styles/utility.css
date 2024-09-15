@@ -2,14 +2,30 @@
     display: grid;
   }
   
-  .grid-flow-col {
+  .gridFlowCol {
     grid-auto-flow: column;
   }
   
-  .grid-cols-2 {
+  .gridCols2 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .gap-16 {
+  .gap16 {
     gap: 1.6rem;
+  }
+
+  .txt2xl {
+    font: var(--h1);
+  }
+
+  .txtXl {
+    font: var(--h2);
+  }
+
+  .txtLg{
+    font: var(--h3);
+  }
+
+  .txtSm {
+    font: var(--txt-sm);
   }
