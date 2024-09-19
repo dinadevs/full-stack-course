@@ -58,6 +58,7 @@ img {
 
 main {
   margin-block: 4.0rem;
+  gap: 8.0rem;
 }
 
 .contentTag {
