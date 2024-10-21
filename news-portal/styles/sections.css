@@ -21,6 +21,8 @@ section header {
 }
 
 #featured {
+  grid-area: featured;
+
   img {
     height: 100%;
     object-fit: cover;
@@ -56,7 +58,9 @@ section header {
   }
 }
 
-#mostRead {
+#readWeekly {
+  grid-area: readWeekly;
+
   & > div {
     grid-template-columns: repeat(4, 29.2rem);
   }
@@ -78,5 +82,37 @@ section header {
       margin-top: 0.8rem;
       font-weight: 800;
     }
+  }
+}
+
+#ai {
+  grid-area: ai;
+
+  img {
+    width: 17.6rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-block: 0.8rem 0.4rem;
+  }
+}
+
+aside {
+  grid-area: aside;
+}
+
+#mostRead {
+  margin-top: 3.2rem;
+
+  h3 {
+    margin-top: 0.8rem;
+  }
+
+  img {
+    width: 7.2rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
   }
 }

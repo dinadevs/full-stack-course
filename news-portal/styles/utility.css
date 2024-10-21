@@ -17,6 +17,7 @@
   .gap32 {
     gap: 3.2rem;
   } 
+  
   .txt2xl {
     font: var(--h1);
   }
