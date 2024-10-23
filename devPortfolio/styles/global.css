@@ -4,3 +4,32 @@
     box-sizing: border-box;
   }
 
+  :root {
+    font-size: 62.5%;
+  
+    --red: #E3646E;
+    --purple: #BB72E9;
+    --blue: #3996DB;
+    --green: #82BC4F;
+    --yellow: #EABD5F;
+    --gray-100: #0D0E11;
+    --gray-200: #16181D;
+    --gray-300: #292C34;
+    --gray-400: #878EA1;
+    --gray-500: #C0C4CE;
+    --gray-600: #E2E4E9;
+  
+    --font-asap: 'Asap', sans-serif;  
+    --font-inconsolata: 'Inconsolata', monospace;
+    --font-maven-pro: 'Maven Pro', sans-serif;
+
+    --h1: 700 5.6rem/120% var(--font-asap);
+    --h2: 700 2.4rem/120% var(--font-asap);
+    --h4: 700 1.6rem/120% var(--font-asap);
+    
+    --h3: 400 2rem/120% var(--font-inconsolata);
+    
+    --txt-md: 400 1.6rem/140% var(--font-maven-pro);
+    --txt-sm: 400 1.4rem/140% var(--font-maven-pro);
+  }
+
