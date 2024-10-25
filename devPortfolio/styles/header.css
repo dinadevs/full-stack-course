@@ -1,0 +1,27 @@
+#avatar {
+    position: relative;
+    display: inline-block;
+  }
+
+  #avatar img:nth-child(1) {
+    border-radius: 50%;
+    border: 0.5rem solid var(--red);
+    width: 11.2rem;
+    height: 11.2rem;
+    padding: 4.3px;
+  }
+
+  #avatar img:nth-child(2) {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  .tag {
+    display: inline-block;
+    align-items: center;
+    background-color: var(--gray-300);
+    border-radius: 99.9rem;
+    padding: 0.8rem 1.6rem;
+  }
+

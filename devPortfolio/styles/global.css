@@ -23,13 +23,38 @@
     --font-inconsolata: 'Inconsolata', monospace;
     --font-maven-pro: 'Maven Pro', sans-serif;
 
-    --h1: 700 5.6rem/120% var(--font-asap);
-    --h2: 700 2.4rem/120% var(--font-asap);
-    --h4: 700 1.6rem/120% var(--font-asap);
+    --h1: 700 5.6rem/120% var(--font-asap); /*title lg*/
+    --h2: 700 2.4rem/120% var(--font-asap); /*title md*/
+    --h4: 700 1.6rem/120% var(--font-asap); /*title sm*/
     
-    --h3: 400 2rem/120% var(--font-inconsolata);
+    --h3: 400 2rem/120% var(--font-inconsolata); /*sub*/
     
-    --txt-md: 400 1.6rem/140% var(--font-maven-pro);
-    --txt-sm: 400 1.4rem/140% var(--font-maven-pro);
+    --txt-md: 400 1.6rem/140% var(--font-maven-pro); /*p*/
+    --txt-sm: 400 1.4rem/140% var(--font-maven-pro); /*p*/
   }
 
+  body {
+    width: 100%;
+    text-align: center;
+    color: var(--gray-500); /*sub*/
+  }
+
+  h1, h2, h4 {
+    color: var(--gray-600);
+  }
+
+  h1 {
+    font: var(--h1); /*title lg*/
+  }
+
+  h2 {
+    font: var(--h2); /*title md*/
+  }
+
+  h3 {
+    font: var(--h3);/*sub*/ 
+  }
+
+  h4 {
+    font: var(--h4);/*title sm*/
+  }
