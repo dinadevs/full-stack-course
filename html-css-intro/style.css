@@ -56,6 +56,10 @@ h2 {
   font-size: 2.4rem;
 }
 
+ul {
+  padding-left: 24px;
+}
+
 footer {
   color: #f0e8c2;
   text-align: center;
@@ -75,11 +79,7 @@ footer img {
     font-size: 2rem;
   }
 
-  #page {
-    padding: 1.6rem;
-  }
-
-  main {
+  #page, main  {
     padding: 1.6rem;
   }
 
@@ -101,11 +101,7 @@ footer img {
     font-size: 1.8rem;
   }
 
-  #page {
-    padding: 1.2rem;
-  }
-
-  main {
+  #page, main {
     padding: 1.2rem;
   }
 
