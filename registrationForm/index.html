@@ -28,6 +28,55 @@
             Preencha os dados abaixo para matricular seu filho na escola de
             educação infantil Estrelas do Amanhã.
           </p>
+
+          <form method="post" enctype="multipart/form-data">
+            <fieldset class="childInfo">
+              <legend>Informação da criança</legend>
+
+              <div class="inputWrapper">
+                <label for="fullname">Nome completo</label>
+                <input type="text" id="fullname" placeholder="Nome" />
+              </div>
+
+              <div class="inputWrapper">
+                <label for="birth">Data de nascimento</label>
+                <input type="date" id="birth" lang="pt-BR" />
+              </div>
+
+              <div class="selectWrapper">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender">
+                  <option value="masculine">Masculino</option>
+                  <option value="feminine">Feminino</option>
+                  <option value="na">Prefiro não responder</option>
+                </select>
+              </div>
+
+              <div class="textareaWrapper">
+                <label for="medicalInfo">Informações médicas</label>
+                <textarea
+                  name="medicalInfo"
+                  id="medicalInfo"
+                  cols="30"
+                  rows="10"
+                  placeholder="Descreva sintomas, histórico médico e outras informações relevantes da criança."
+                  title="Digite informações detalhadas como sintomas, medicamentos, ou alergias."
+                ></textarea>
+              </div>
+
+              <div class="inputFile">
+                <label for="">Certidão de nascimento</label>
+                <input
+                  type="file"
+                  id="bithFile"
+                  name="bithFile"
+                  accept=".pdf, .jpg, .png"
+                />
+                <img src="assets/icons/cloudUpload.svg" alt="">
+                <p>Clique aqui para selecionar arquivos</p>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
       <aside>
@@ -43,7 +92,10 @@
               ambiente acolhedor, seguro e estimulante.
             </p>
           </header>
-          <img src="assets/Illustration.svg" alt="imagem de uma professora ensinando 4 crianças">
+          <img
+            src="assets/Illustration.svg"
+            alt="imagem de uma professora ensinando 4 crianças"
+          />
         </div>
       </aside>
     </div>
