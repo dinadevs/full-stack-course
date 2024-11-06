@@ -19,7 +19,7 @@
       <main>
         <div class="form">
           <header class="headerForm">
-            <img src="assets/icons/arrowLeft.svg" alt="left arrow" />
+            <img src="assets/icons/arrowLeft.svg" alt="seta para esquerda" />
             <span>Voltar</span>
           </header>
 
@@ -58,7 +58,7 @@
                   name="medicalInfo"
                   id="medicalInfo"
                   cols="30"
-                  rows="10"
+                  rows="5"
                   placeholder="Descreva sintomas, histórico médico e outras informações relevantes da criança."
                   title="Digite informações detalhadas como sintomas, medicamentos, ou alergias."
                 ></textarea>
@@ -66,14 +66,16 @@
 
               <div class="inputFile">
                 <label for="">Certidão de nascimento</label>
-                <input
+                <div class="dropFile">
+                  <input
                   type="file"
                   id="bithFile"
                   name="bithFile"
                   accept=".pdf, .jpg, .png"
                 />
                 <img src="assets/icons/cloudUpload.svg" alt="">
-                <p>Clique aqui para selecionar arquivos</p>
+                <p>Clique aqui para <br> selecionar arquivos</p>
+                </div>
               </div>
             </fieldset>
           </form>
