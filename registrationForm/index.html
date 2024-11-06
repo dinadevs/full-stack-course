@@ -68,19 +68,64 @@
                 <label for="">Certidão de nascimento</label>
                 <div class="dropFile">
                   <input
-                  type="file"
-                  id="bithFile"
-                  name="bithFile"
-                  accept=".pdf, .jpg, .png"
-                />
-                <img src="assets/icons/cloudUpload.svg" alt="">
-                <p>Clique aqui para <br> selecionar arquivos</p>
+                    type="file"
+                    id="bithFile"
+                    name="bithFile"
+                    accept=".pdf, .jpg, .png"
+                  />
+                  <img src="assets/icons/cloudUpload.svg" alt="" />
+                  <p>
+                    Clique aqui para <br />
+                    selecionar arquivos
+                  </p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="address">
+              <legend>Endereço residencial</legend>
+
+              <div class="inputWrapper">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" />
+              </div>
+
+              <div class="flex">
+                <div class="inputWrapper flex2">
+                  <label for="street">Rua</label>
+                  <input
+                    type="text"
+                    id="street"
+                    name="street"
+                    value="Rua das Flores"
+                    disabled
+                  />
+                </div>
+
+                <div class="inputWrapper flex1" >
+                  <label for="number">Número</label>
+                  <input type="number" id="number" name="number" />
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="inputWrapper flex2">
+                  <label for="city">Cidade</label>
+                  <input type="text" id="city" name="city" value="São Paulo"
+                  disabled/>
+                </div>
+
+                <div class="inputWrapper flex1">
+                  <label for="state">Estado</label>
+                  <input type="text" id="state" name="text" value="SP"
+                  disabled/>
                 </div>
               </div>
             </fieldset>
           </form>
         </div>
       </main>
+
       <aside>
         <div class="frame">
           <header class="headerFrame">

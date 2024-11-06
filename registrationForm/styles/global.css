@@ -18,6 +18,7 @@
 
     --surface-primary: #FFFFFF;
     --surface-secondary: #FEE7D6;
+    --surface-disable: #E7E5E4;
 
     --stroke-default: #D6D3D1;
     --stroke-highlight: #F3541C;
@@ -41,4 +42,14 @@
     height: auto;
   }
 
- 
+ .flex {
+  display: flex;
+ }
+
+ .flex1 {
+  flex: 1
+ }
+
+ .flex2 {
+  flex: 2
+ }
