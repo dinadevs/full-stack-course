@@ -4,3 +4,16 @@
     padding: 12rem;
     
   }
+
+  .projects {
+    background: var(--gray-300);
+  }
+ 
+  .services {
+    background: var(--gray-100);
+  }
+
+  .contact {
+    background: url(../assets/img/bgContacts.png);
+    background-size: cover;
+  }
