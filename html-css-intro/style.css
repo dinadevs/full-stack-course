@@ -16,6 +16,20 @@ body {
   background-size: cover;
 }
 
+header img {
+  height: 3.0rem;
+  width: 3.0rem;
+  margin: 1rem;
+}
+
+header img:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
 #page {
   width: 100%;
   max-width: 80rem;
@@ -23,6 +37,14 @@ body {
   background-color: #f0e8c2;
   border-radius: 2.4rem;
   margin: 4.8rem auto 2.8rem;
+}
+
+#page.darkMode {
+  background-color: #291b1a;
+  color: #f0e8c2;
+  h1, h2 {
+    color: #f0e8c2;
+  }
 }
 
 #page img {
@@ -113,3 +135,5 @@ footer img {
     margin-top: 0.8rem;
   }
 }
+
+
