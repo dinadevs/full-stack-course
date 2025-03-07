@@ -5,7 +5,7 @@
 
   #avatar img:nth-child(1) {
     border-radius: 50%;
-    border: 0.5rem solid var(--red);
+    border: 0.2rem solid var(--red);
     width: 11.2rem;
     height: 11.2rem;
     padding: 4.3px;
@@ -18,10 +18,16 @@
   }
 
   .tag {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     background-color: var(--gray-300);
     border-radius: 99.9rem;
+    min-width: 119px;
+    width: auto;
+    height: 40px;
     padding: 0.8rem 1.6rem;
+    gap: .8rem;
   }
+
+
 

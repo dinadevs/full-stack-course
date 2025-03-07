@@ -62,11 +62,13 @@ section header {
   grid-area: readWeekly;
 
   & > div {
-    grid-template-columns: repeat(4, 29.2rem);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   img {
     height: 16rem;
+    width: 100%;
+    object-fit: cover;
   }
 
   figure {

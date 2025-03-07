@@ -34,9 +34,10 @@
   }
 
   body {
+    font-family: var(--font-maven-pro);
+    color: var(--gray-500); /*sub*/
     width: 100%;
     text-align: center;
-    color: var(--gray-500); /*sub*/
   }
 
   h1, h2, h4 {
@@ -47,16 +48,31 @@
     font: var(--h1); /*title lg*/
   }
 
+  p {
+    font: var(--txt-sm);
+    color: var(--gray-400);
+    padding: 2.0rem 0 8.0rem;
+  }
+
+  span {
+    font: var(--txt-md);
+  }
+
   h2 {
     font: var(--h2); /*title md*/
   }
 
   h3 {
     font: var(--h3);/*sub*/ 
+    padding: 5.6rem 0 .8rem;
   }
 
   h4 {
     font: var(--h4);/*title sm*/
   }
+
+ 
+
+
 
  
