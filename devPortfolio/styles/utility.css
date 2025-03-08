@@ -10,6 +10,10 @@
     grid-auto-flow: column;
 }
 
+.gridCols3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid {
     display: grid;
 }

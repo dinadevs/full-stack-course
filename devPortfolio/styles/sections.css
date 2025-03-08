@@ -1,33 +1,60 @@
 .intro {
-    background: url(../assets/img/bgIntro.png);
-    background-size: cover;
-    padding: 12rem;
-  }
+  background: url(../assets/img/bgIntro.png);
+  background-size: cover;
+  background-position: center;
 
-  #tech {
+  p {
+    padding: 2rem 0 8rem;
+  }
+}
+
+#tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+
+  .techArrow {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.6rem; 
-    justify-content: center; 
-    align-items: center;
-    
-    .techArrow {
-      width: 100%; 
-      display: flex;
-      justify-content: center; 
-      margin-top: 9.4rem; 
-    }
+    justify-content: center;
+    margin: 9.4rem 0 5.7rem;
+  }
+}
+
+#projects {
+  justify-content: center;
+  align-items: center;
+  padding: 5.6rem 12rem 14.4rem;
+}
+
+#services {
+  background: var(--gray-100);
+}
+
+#contact {
+  background: url(../assets/img/bgContacts.png);
+  background-size: cover;
+}
+
+figure {
+  padding: 1.2rem;
+
+  width: 330px;
+  height: 280px;
+
+  background-color: var(--gray-300);
+  border-radius: 1.2rem;
+
+  img {
+    width: 306px;
+    height: 156px;
+
+    border-radius: 0.8rem;
   }
 
-  #projects {
-    background: var(--gray-300);
+  figcaption {
+    text-align: left;
   }
- 
-  #services {
-    background: var(--gray-100);
-  }
-
-  #contact {
-    background: url(../assets/img/bgContacts.png);
-    background-size: cover;
-  }
+}

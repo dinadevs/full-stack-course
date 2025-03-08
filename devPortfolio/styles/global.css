@@ -36,8 +36,11 @@
   body {
     font-family: var(--font-maven-pro);
     color: var(--gray-500); /*sub*/
-    width: 100%;
     text-align: center;
+  }
+
+  main {
+    background: var(--gray-200);
   }
 
   h1, h2, h4 {
@@ -51,7 +54,6 @@
   p {
     font: var(--txt-sm);
     color: var(--gray-400);
-    padding: 2.0rem 0 8.0rem;
   }
 
   span {
@@ -64,12 +66,15 @@
 
   h3 {
     font: var(--h3);/*sub*/ 
-    padding: 5.6rem 0 .8rem;
+    padding: 7.2rem 0 .8rem;
   }
 
   h4 {
     font: var(--h4);/*title sm*/
+    margin: 2.4rem 0 .8rem;
   }
+
+
 
  
 
