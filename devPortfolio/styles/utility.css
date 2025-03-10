@@ -18,6 +18,17 @@
     display: grid;
 }
 
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgCoverCenter {
+  background-size: cover;
+  background-position: center;
+}
+
 .txtMd{
     font: var(--txt-md);
   }

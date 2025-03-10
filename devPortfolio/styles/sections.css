@@ -1,7 +1,5 @@
 .intro {
   background: url(../assets/img/bgIntro.png);
-  background-size: cover;
-  background-position: center;
 
   p {
     padding: 2rem 0 8rem;
@@ -9,16 +7,10 @@
 }
 
 #tech {
-  display: flex;
   flex-wrap: wrap;
-  gap: 1.6rem;
-  justify-content: center;
-  align-items: center;
 
   .techArrow {
     width: 100%;
-    display: flex;
-    justify-content: center;
     margin: 9.4rem 0 5.7rem;
   }
 }
@@ -27,34 +19,104 @@
   justify-content: center;
   align-items: center;
   padding: 5.6rem 12rem 14.4rem;
+
+  figure {
+    padding: 1.2rem;
+
+    width: 33rem;
+    height: 28rem;
+
+    background-color: var(--gray-300);
+    border-radius: 1.2rem;
+
+    text-align: left;
+
+    img {
+      width: 30.6rem;
+      height: 15.6rem;
+
+      border-radius: 0.8rem;
+    }
+  }
 }
 
-#services {
+#projects figure:hover {
+  border: 1.5px solid var(--gray-400);
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.myServices {
   background: var(--gray-100);
+}
+
+#services figure {
+  margin: 5.6rem 0 12rem;
+  padding: 2rem;
+  width: 28rem;
+  height: 15.5rem;
+
+  border-radius: 1.2rem;
+  border: 2px solid var(--gray-200);
+
+  text-align: left;
+
+  h3 {
+    padding: 8.8rem 0 8rem;
+  }
 }
 
 #contact {
   background: url(../assets/img/bgContacts.png);
-  background-size: cover;
-}
+  flex-direction: column;
 
-figure {
-  padding: 1.2rem;
+  padding: 12.8rem 12rem 20rem;
 
-  width: 330px;
-  height: 280px;
-
-  background-color: var(--gray-300);
-  border-radius: 1.2rem;
-
-  img {
-    width: 306px;
-    height: 156px;
-
-    border-radius: 0.8rem;
+  p {
+    margin-block: 8px 48px;
   }
 
-  figcaption {
-    text-align: left;
+  h3 {
+    padding: 0 0 0.8rem;
   }
 }
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+}
+
+#contact li {
+  width: 40rem;
+  height: 6.8rem;
+
+  background: var(--gray-300);
+  border-radius: 0.8rem;
+}
+
+#contact li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 2rem;
+  text-decoration: none;
+  font: var(--txt-md);
+  color: var(--gray-500);
+
+  & img:nth-child(3) {
+    margin-left: auto;
+  }
+}
+
+#contact li:hover {
+  border: 1.5px solid var(--blue);
+}
+
+#contact li:hover a img:not(:last-child) {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(27%) saturate(1562%)
+    hue-rotate(168deg) brightness(95%) contrast(79%);
+}
+
