@@ -1,5 +1,5 @@
 .intro {
-  background: url(../assets/img/bgIntro.png);
+  background-image: url(../assets/img/bgIntro.png);
 
   p {
     padding: 2rem 0 8rem;
@@ -67,13 +67,14 @@
 }
 
 #contact {
-  background: url(../assets/img/bgContacts.png);
+  background-image: url(../assets/img/bgContacts.png);
   flex-direction: column;
 
   padding: 12.8rem 12rem 20rem;
 
   p {
     margin-block: 8px 48px;
+    font: var(--txt-md);
   }
 
   h3 {
@@ -115,7 +116,7 @@
   border: 1.5px solid var(--blue);
 }
 
-#contact li:hover a img:not(:last-child) {
+#contact li:hover a img:first-child {
   filter: brightness(0) saturate(100%) invert(53%) sepia(27%) saturate(1562%)
     hue-rotate(168deg) brightness(95%) contrast(79%);
 }
