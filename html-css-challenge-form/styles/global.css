@@ -53,3 +53,7 @@
   --brand-mid: #3487CF;  
   --brand-light: #59B2FF;    
 }
+
+body {
+  overflow: hidden;
+}
