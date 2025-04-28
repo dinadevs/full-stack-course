@@ -7,25 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Invitation form</title>
-    
-    <link rel="stylesheet" href="styles/index.css" />   
+
+    <link rel="stylesheet" href="styles/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    
   </head>
   <body>
     <div id="app">
       <aside>
         <div class="asideContainer">
           <div class="imgContainer">
-          <header>
-            <img src="./assets/Logo.svg" alt="Imagem de um lança confete">
-            <h1>Festivite</h1>
-            <p>Crie um convite digital para o seu evento</p>
-          </header>
-            <img src="./assets/bg.svg" alt="imagem de um bolo de aniversário com uma vela">
+            <header>
+              <img src="./assets/Logo.svg" alt="Imagem de um lança confete" />
+              <h1>Festivite</h1>
+              <p>Crie um convite digital para o seu evento</p>
+            </header>
+            <img
+              src="./assets/bg.svg"
+              alt="imagem de um bolo de aniversário com uma vela"
+            />
           </div>
         </div>
       </aside>
@@ -33,6 +35,62 @@
       <main>
         <div class="mainContainer">
           <h1>Crie seu convite</h1>
+
+          <form method="post" enctype="multipart/form-data">
+            <fieldset class="about">
+              <img src="./assets/icons/calendar.svg" alt="">
+              <legend>Sobre o evento</legend>
+
+              <div class="inputWrapper">
+                <label for="title">Título</label>
+                <input id="title" name="title" type="text" placeholder="Nome do evento" />
+              </div>
+
+              <div class="inputWrapper">
+                <label for="startEvent">Início</label>
+                <input id="startEvent" name="startEvent" type="datetime-local" placeholder="DD/MM/AAAA, --:--" />
+              </div>
+
+              <div class="inputWrapper">
+                <label for="endEvent">Fim</label>
+                <input id="endEvent" name="endEvent" type="datetime-local" placeholder="DD/MM/AAAA, --:--" />
+              </div>
+
+              <div class="toggleGroup">
+                <div class="inputWrapper">
+                  <label>Tipo</label>
+              
+                  <div class="options">
+                    <input type="radio" id="personally" name="personally" checked>
+                    <label for="personally">
+                      <i class="icon-presencial"></i> Presencial
+                    </label>
+              
+                    <input type="radio" id="online" name="online">
+                    <label for="online">
+                      <i class="icon-online"></i> Online
+                    </label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="inputWrapper">
+                <label for="location">Local</label>
+                <input
+                  id="location"
+                  name="location"
+                  type="url"
+                  placeholder="Link ou endereço"
+                />
+              </div>
+
+              <div class="textWrapper">
+                <label for="Description">Descrição</label>
+                <textarea name="Description" id="Description" placeholder="Detalhes do evento"></textarea>
+              </div>
+
+            </fieldset>
+          </form>
         </div>
       </main>
     </div>
