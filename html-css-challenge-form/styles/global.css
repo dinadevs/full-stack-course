@@ -11,19 +11,19 @@
   --font-baloo: "Baloo 2", sans-serif;  
   --font-open-sans: "Open Sans", sans-serif;
 
-  --txt-logo: 400 2.5rem/auto var(var(--font-leckerli));
+  --txt-logo: 400 4.0rem var(--font-leckerli);
 
-  --heading-md: 700 1.75rem/auto var(--font-baloo); 
-  --heading-sm: 700 1.125rem/auto var(--font-baloo);
+  --heading-md: 700 2.8rem var(--font-baloo); 
+  --heading-sm: 700 1.8rem var(--font-baloo);
 
-  --body-md-regular: 400 1rem/auto var(--font-open-sans);     
-  --body-md-semibold: 600 1rem/auto var(--font-open-sans);
+  --body-md-regular: 400 1.6rem var(--font-open-sans);     
+  --body-md-semibold: 600 1.6rem var(--font-open-sans);
 
-  --body-sm-regular: 400 0.875rem/auto var(--font-open-sans);
-  --body-sm-semibold: 600 0.875rem/auto var(--font-open-sans);
+  --body-sm-regular: 400 1.4rem var(--font-open-sans);
+  --body-sm-semibold: 600 1.4rem var(--font-open-sans);
 
-  --body-xs-regular: 400 0.75rem/auto var(--font-open-sans);  
-  --body-xs-semibold: 600 0.75rem/auto var(--font-open-sans);
+  --body-xs-regular: 400 1.2rem var(--font-open-sans);  
+  --body-xs-semibold: 600 1.2rem var(--font-open-sans);
 
   --txt-body: #C8CDD0;
   --txt-heading: #F9F9F9;
@@ -56,4 +56,11 @@
 
 body {
   overflow: hidden;
+  font-family: var(--font-open-sans);
+  color: var(--txt-heading);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
