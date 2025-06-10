@@ -64,3 +64,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.flex {
+  display: flex;
+ }
+
+ .flex1 {
+  flex: 1;
+ }
+
+.legendTitle {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  legend {
+    margin-bottom: 0;
+  }
+}
+
