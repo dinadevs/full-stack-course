@@ -1,0 +1,40 @@
+input,
+textarea,
+select {
+  font: var(--body-md-regular);
+  appearance: none;
+  width: 100%;
+  border-radius: 0.8rem;
+  background: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  padding: 1.6rem;
+}
+
+label {
+  font: var(--body-sm-regular);
+  color: var(--input-placeholder);
+  display: block;
+  margin-bottom: 1.2rem; 
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: .1rem solid var(--brand-light);
+  outline-offset: .1px;
+}
+
+.row, .selectWrapper .options{
+  display: flex;
+  gap: 1.6rem;
+}
+
+.row .inputWrapper {
+  flex: 1;
+}
+
+.selectWrapper .options label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

@@ -1,0 +1,47 @@
+.toggle-group {
+  display: flex;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.8rem;
+}
+
+.toggle-option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.6rem;
+  cursor: pointer;
+  font: var(--body-md-regular);
+  color: var(--input-placeholder);
+  transition: background 0.3s, color 0.3s;
+  text-align: center;
+}
+
+.toggle-option input {
+  display: none;
+}
+
+.toggle-option img {
+  width: 1.6rem;
+  height: 1.6rem;
+  transition: filter 0.3s;
+}
+
+.toggle-option input:checked + img + span {
+  color: var(--txt-heading);
+  font: var(--body-md-semibold);
+}
+
+.toggle-option input:checked + img {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(14%) saturate(746%) hue-rotate(172deg) brightness(102%) contrast(102%);
+}
+
+.toggle-option input:focus + img + span {
+  outline: 0.1rem solid var(--brand-light);
+  outline-offset: 0.1px;
+}
+
+.toggle-option:hover {
+  background-color: var(--shape-hover);
+}
