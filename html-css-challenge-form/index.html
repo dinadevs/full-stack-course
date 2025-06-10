@@ -38,42 +38,64 @@
 
           <form method="post" enctype="multipart/form-data">
             <fieldset class="about">
-              <img src="./assets/icons/calendar.svg" alt="">
-              <legend>Sobre o evento</legend>
+              <div class="legendTitle">
+                <img src="./assets/icons/calendar.svg" alt="" />
+                <legend>Sobre o evento</legend>
+              </div>
 
               <div class="inputWrapper">
                 <label for="title">Título</label>
-                <input id="title" name="title" type="text" placeholder="Nome do evento" />
+                <input
+                  id="title"
+                  name="title"
+                  type="text"
+                  placeholder="Nome do evento"
+                />
               </div>
 
-              <div class="inputWrapper">
-                <label for="startEvent">Início</label>
-                <input id="startEvent" name="startEvent" type="datetime-local" placeholder="DD/MM/AAAA, --:--" />
-              </div>
-
-              <div class="inputWrapper">
-                <label for="endEvent">Fim</label>
-                <input id="endEvent" name="endEvent" type="datetime-local" placeholder="DD/MM/AAAA, --:--" />
-              </div>
-
-              <div class="toggleGroup">
+              <div class="row">
                 <div class="inputWrapper">
-                  <label>Tipo</label>
+                  <label for="startEvent">Início</label>
+                  <input
+                    id="startEvent"
+                    name="startEvent"
+                    type="datetime-local"
+                    lang="pt-BR"
+                    placeholder="DD/MM/AAAA, --:--"
+                  />
+                </div>
+
+                <div class="inputWrapper">
+                  <label for="endEvent">Fim</label>
+                  <input
+                    id="endEvent"
+                    name="endEvent"
+                    type="datetime-local"
+                    lang="pt-BR"
+                    placeholder="DD/MM/AAAA, --:--"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+              <div class="selectWrapper">
+                <label>Tipo</label>
+                <div class="toggle-group">
+                  <label class="toggle-option">
+                    <input type="radio" name="type" value="presencial" checked />
+                    <img src="./assets/icons/building.svg" alt="Presencial">
+                    <span>Presencial</span>
+                  </label>
               
-                  <div class="options">
-                    <input type="radio" id="personally" name="personally" checked>
-                    <label for="personally">
-                      <i class="icon-presencial"></i> Presencial
-                    </label>
-              
-                    <input type="radio" id="online" name="online">
-                    <label for="online">
-                      <i class="icon-online"></i> Online
-                    </label>
-                  </div>
+                  <label class="toggle-option">
+                    <input type="radio" name="type" value="online" />
+                    <img src="./assets/icons/video.svg" alt="Online">
+                    <span>Online</span>
+                  </label>
                 </div>
               </div>
               
+
               <div class="inputWrapper">
                 <label for="location">Local</label>
                 <input
@@ -83,12 +105,18 @@
                   placeholder="Link ou endereço"
                 />
               </div>
+            </div>
 
               <div class="textWrapper">
                 <label for="Description">Descrição</label>
-                <textarea name="Description" id="Description" placeholder="Detalhes do evento"></textarea>
+                <textarea
+                  name="Description"
+                  id="Description"
+                  cols="30"
+                  rows="5"
+                  placeholder="Detalhes do evento"
+                ></textarea>
               </div>
-
             </fieldset>
           </form>
         </div>
