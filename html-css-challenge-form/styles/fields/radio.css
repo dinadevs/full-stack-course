@@ -1,0 +1,64 @@
+.radioWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.colorOption {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 6px solid var(--shape-button);
+  position: relative;
+}
+
+input[type="radio"]:hover + .colorOption {
+  border-color: var(--shape-hover); 
+}
+
+input[type="radio"]:checked + .colorOption {
+  border-color: var(--brand-light);
+}
+
+.colorOption.danger {
+  background-color: var(--danger);
+}
+.colorOption.lime {
+  background-color: var(--lime);
+}
+.colorOption.purple {
+  background-color: var(--purple);
+}
+.colorOption.fuschia {
+  background-color: var(--fuschia);
+}
+.colorOption.pink {
+  background-color: var(--pink);
+}
+.colorOption.orange {
+  background-color: var(--orange);
+}
+.colorOption.yellow {
+  background-color: var(--yellow);
+}
+.colorOption.green {
+  background-color: var(--green);
+}
+.colorOption.cyan {
+  background-color: var(--cyan);
+}
+.colorOption.navy {
+  background-color: var(--navy);
+}
+.colorOption.brand-light {
+  background-color: var(--brand-light);
+}
