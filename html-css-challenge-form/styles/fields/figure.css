@@ -1,0 +1,20 @@
+.theme {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .8rem;
+  border-radius: 8px;
+}
+
+.item {
+  background-color: var(--shape-button);
+  border-radius: 0.8rem;
+  border: 1px solid var(--input-stroke);
+  width: 134px;
+  height: 103px;
+  padding: .4rem .4rem .8rem;
+}
+
+.details {
+  text-align: center;
+  padding: .8rem;
+}

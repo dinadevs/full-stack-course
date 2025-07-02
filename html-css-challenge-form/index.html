@@ -17,19 +17,15 @@
   <body>
     <div id="app">
       <aside>
-        <div class="asideContainer">
-          <div class="imgContainer">
-            <header>
-              <img src="./assets/Logo.svg" alt="Imagem de um lança confete" />
-              <h1>Festivite</h1>
-              <p>Crie um convite digital para o seu evento</p>
-            </header>
-            <img
-              src="./assets/bg.svg"
-              alt="imagem de um bolo de aniversário com uma vela"
-            />
-          </div>
-        </div>
+        <header>
+          <img src="./assets/Logo.svg" alt="Imagem de um lança confete" />
+          <h1>Festivite</h1>
+          <p>Crie um convite digital para o seu evento</p>
+        </header>
+        <img
+          src="./assets/bg.svg"
+          alt="imagem de um bolo de aniversário com uma vela"
+        />
       </aside>
 
       <main>
@@ -78,34 +74,38 @@
               </div>
 
               <div class="row">
-              <div class="selectWrapper">
-                <label>Tipo</label>
-                <div class="toggle-group">
-                  <label class="toggle-option">
-                    <input type="radio" name="type" value="presencial" checked />
-                    <img src="./assets/icons/building.svg" alt="Presencial">
-                    <span>Presencial</span>
-                  </label>
-              
-                  <label class="toggle-option">
-                    <input type="radio" name="type" value="online" />
-                    <img src="./assets/icons/video.svg" alt="Online">
-                    <span>Online</span>
-                  </label>
+                <div class="selectWrapper">
+                  <label>Tipo</label>
+                  <div class="toggle-group">
+                    <label class="toggle-option">
+                      <input
+                        type="radio"
+                        name="type"
+                        value="presencial"
+                        checked
+                      />
+                      <img src="./assets/icons/building.svg" alt="Presencial" />
+                      <span>Presencial</span>
+                    </label>
+
+                    <label class="toggle-option">
+                      <input type="radio" name="type" value="online" />
+                      <img src="./assets/icons/video.svg" alt="Online" />
+                      <span>Online</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="inputWrapper">
+                  <label for="location">Local</label>
+                  <input
+                    id="location"
+                    name="location"
+                    type="url"
+                    placeholder="Link ou endereço"
+                  />
                 </div>
               </div>
-              
-
-              <div class="inputWrapper">
-                <label for="location">Local</label>
-                <input
-                  id="location"
-                  name="location"
-                  type="url"
-                  placeholder="Link ou endereço"
-                />
-              </div>
-            </div>
 
               <div class="textWrapper">
                 <label for="Description">Descrição</label>
@@ -122,22 +122,205 @@
             <fieldset class="customization">
               <div class="legendTitle">
                 <img src="./assets/icons/paintbrush-vertical.svg" alt="" />
-                <legend>Sobre o evento</legend>
+                <legend>Personalização</legend>
               </div>
 
+              <label for="title">Cor principal</label>
               <div class="radioWrapper">
-                <label><input type="radio" name="color" value="danger"><span class="colorOption danger" title="danger"></span></label>
-                <label><input type="radio" name="color" value="lime"><span class="colorOption lime" title="lime"></span></label>
-                <label><input type="radio" name="color" value="purple"><span class="colorOption purple" title="purple"></span></label>
-                <label><input type="radio" name="color" value="fuschia"><span class="colorOption fuschia" title="fuschia"></span></label>
-                <label><input type="radio" name="color" value="pink"><span class="colorOption pink" title="pink"></span></label>
-                <label><input type="radio" name="color" value="orange"><span class="colorOption orange" title="orange"></span></label>
-                <label><input type="radio" name="color" value="yellow"><span class="colorOption yellow" title="yellow"></span></label>
-                <label><input type="radio" name="color" value="green"><span class="colorOption green" title="green"></span></label>
-                <label><input type="radio" name="color" value="cyan"><span class="colorOption cyan" title="cyan"></span></label>
-                <label><input type="radio" name="color" value="navy"><span class="colorOption navy" title="navy"></span></label>
-                <label><input type="radio" name="color" value="brand-light"><span class="colorOption brand-light" title="brand-light"></span></label>
+                <label
+                  ><input type="radio" name="color" value="danger" /><span
+                    class="colorOption danger"
+                    title="danger"
+                  ></span
+                ></label>
+                <label
+                  ><input type="radio" name="color" value="lime" /><span
+                    class="colorOption lime"
+                    title="lime"
+                  ></span
+                ></label>
+                <label
+                  ><input type="radio" name="color" value="purple" /><span
+                    class="colorOption purple"
+                    title="purple"
+                  ></span
+                ></label>
+                <label
+                  ><input type="radio" name="color" value="fuschia" /><span
+                    class="colorOption fuschia"
+                    title="fuschia"
+                  ></span
+                ></label>
+                <label
+                  ><input type="radio" name="color" value="pink" /><span
+                    class="colorOption pink"
+                    title="pink"
+                  ></span
+                ></label>
+                <label
+                  ><input type="radio" name="color" value="orange" /><span
+                    class="colorOption orange"
+                    title="orange"
+                  ></span
+                ></label>
+                <label
+                  ><input type="radio" name="color" value="yellow" /><span
+                    class="colorOption yellow"
+                    title="yellow"
+                  ></span
+                ></label>
+                <label
+                  ><input type="radio" name="color" value="green" /><span
+                    class="colorOption green"
+                    title="green"
+                  ></span
+                ></label>
+                <label
+                  ><input type="radio" name="color" value="cyan" /><span
+                    class="colorOption cyan"
+                    title="cyan"
+                  ></span
+                ></label>
+                <label
+                  ><input type="radio" name="color" value="navy" /><span
+                    class="colorOption navy"
+                    title="navy"
+                  ></span
+                ></label>
+                <label
+                  ><input type="radio" name="color" value="brand-light" /><span
+                    class="colorOption brand-light"
+                    title="brand-light"
+                  ></span
+                ></label>
               </div>
+              <section class="theme">
+                <figure class="item">
+                  <img src="./assets/birthday.svg" alt="Bolo de aniversário" />
+                  <figcaption class="details">
+                    <span>Aniversário</span>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img
+                    src="./assets/children's.svg"
+                    alt="Pratos com doces, bolos, colheres e copos"
+                  />
+                  <figcaption class="details">
+                    <span>Infantil</span>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img
+                    src="./assets/graduation.svg"
+                    alt="Chapeu de formatura"
+                  />
+                  <figcaption class="details">
+                    <span>Formatura</span>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img
+                    src="./assets/marriage.svg"
+                    alt="Imagem de duas alianças"
+                  />
+                  <figcaption class="details">
+                    <span>Casamento</span>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img
+                    src="./assets/baby-shower.svg"
+                    alt="Imagem de uma flor e um lenço umidecido"
+                  />
+                  <figcaption class="details">
+                    <span>Chá de bebê</span>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img
+                    src="./assets/bridal-shower.svg"
+                    alt="Imagem de uma cozinha"
+                  />
+                  <figcaption class="details">
+                    <span>Chá de panela</span>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img src="./assets/carnival.svg" alt="Confetes de carnaval" />
+                  <figcaption class="details">
+                    <span>Carnaval</span>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img
+                    src="./assets/Easter.svg"
+                    alt="Enfeite de ovo de páscoa"
+                  />
+                  <figcaption class="details">
+                    <span>Páscoa</span>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img
+                    src="./assets/saint-john.svg"
+                    alt="Bandeirinhas de são joão"
+                  />
+                  <figcaption class="details">
+                    <span>São João</span>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img
+                    src="./assets/Halloween.svg"
+                    alt="Morangas de halloween"
+                  />
+                  <figcaption class="details">
+                    <span>Halloween</span>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img
+                    src="./assets/christmas.svg"
+                    alt="Duas caixas de presentes"
+                  />
+                  <figcaption class="details">
+                    <span>Natal</span>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img
+                    src="./assets/other.svg"
+                    alt="Circulo de pessoas com o copos na mão"
+                  />
+                  <figcaption class="details">
+                    <span>Outro</span>
+                  </figcaption>
+                </figure>
+              </section>
+
+              <div class="toggle-switch">
+                <label class="toggle-option"
+                  >Estilo
+                  <input type="checkbox" name="type" value="presencial" checked />
+                  <span>Escuro</span>
+                  <span>Claro</span>
+                </label>
+              </div>
+
+              <div class="inputFile">
+                <label for="">Foto de capa</label>
+                <div class="dropFile">
+                  <input
+                    type="file"
+                    id="birth"
+                    name="birth"
+                    accept=".pdf, .jpg, .png"
+                  />
+                  <img src="assets/icons/upload.svg" alt="" />
+                  <span> Selecionar </span>
+                  <p>Nenhum arquivo selecionado</p>
+                </div>
               </div>
             </fieldset>
           </form>

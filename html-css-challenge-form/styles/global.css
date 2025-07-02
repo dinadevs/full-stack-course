@@ -60,6 +60,11 @@ body {
   color: var(--txt-heading);
 }
 
+.mainContainer {
+  width: 560px;
+  height: 1712px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -77,9 +82,5 @@ img {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-
-  legend {
-    margin-bottom: 0;
-  }
 }
 
