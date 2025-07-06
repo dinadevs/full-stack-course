@@ -34,7 +34,8 @@
 }
 
 .toggle-option input:checked + img {
-  filter: brightness(0) saturate(100%) invert(74%) sepia(14%) saturate(746%) hue-rotate(172deg) brightness(102%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(74%) sepia(14%) saturate(746%)
+    hue-rotate(172deg) brightness(102%) contrast(102%);
 }
 
 .toggle-option input:focus + img + span {
@@ -45,3 +46,101 @@
 .toggle-option:hover {
   background-color: var(--shape-hover);
 }
+
+input:checked + .slider {
+  background-color: #3b82f6;
+}
+
+input:checked + .slider:before {
+  transform: translateX(40px);
+}
+
+.toggle-text {
+  position: relative;
+  color: transparent; 
+  display: flex;
+  align-items: center;
+}
+
+.toggle-text::after {
+  content: "Escuro";
+  transition: all 0.3s ease;
+}
+
+.switch-toggle:has(.switch input:checked) .toggle-text::after {
+  content: "Claro";
+}
+
+label {
+  margin-bottom: 0;
+}
+
+.switch-toggle {
+  display: flex;
+  
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.switch {
+  position: relative;
+  width: 6.4rem;
+  height: 3.2rem;
+}
+
+.switch input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--input-base);
+  border-radius: 999px;
+  border: 1px solid var(--input-stroke);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--input-stroke);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  margin: 0.4rem;
+}
+
+.theme-checkbox:checked + .slider {
+  background-color: var(--brand-light);
+}
+
+.theme-checkbox:checked + .slider:before {
+  transform: translateX(30px);
+  background-color: var(--txt-heading);
+}
+
+
+.toggle-text {
+  font: var(--body-sm-regular);
+  color: var(--txt-heading);
+}
+
+.toggle-text::after {
+  content: "Escuro";
+  position: absolute;
+  color: #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+
