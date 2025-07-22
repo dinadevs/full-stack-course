@@ -77,7 +77,7 @@
                 <div class="selectWrapper">
                   <label>Tipo</label>
                   <div class="toggle-group">
-                    <label class="toggle-option">
+                    <div class="toggle-option">
                       <input
                         type="radio"
                         name="type"
@@ -85,14 +85,19 @@
                         checked
                       />
                       <img src="./assets/icons/building.svg" alt="Presencial" />
-                      <span>Presencial</span>
-                    </label>
+                      <label>Presencial</label>
+                    </div>
 
-                    <label class="toggle-option">
-                      <input type="radio" name="type" value="online" />
+                    <div class="toggle-option">
                       <img src="./assets/icons/video.svg" alt="Online" />
-                      <span>Online</span>
-                    </label>
+                      <input
+                        type="radio"
+                        name="type"
+                        id="type"
+                        value="online"
+                      />
+                      <label for="type">Online</label>
+                    </div>
                   </div>
                 </div>
 
@@ -194,114 +199,118 @@
                   ></span
                 ></label>
               </div>
+
               <section class="theme">
-                <figure class="item">
+                <legend>Tema do evento</legend>
+                <input type="radio" name="theme" id="birthday" />
+                <label for="birthday" class="item">
                   <img src="./assets/birthday.svg" alt="Bolo de aniversário" />
-                  <figcaption class="details">
-                    <span>Aniversário</span>
-                  </figcaption>
-                </figure>
-                <figure class="item">
+                  Aniversário
+                </label>
+
+                <input type="radio" name="theme" id="children" />
+                <label for="children" class="item">
                   <img
                     src="./assets/children's.svg"
                     alt="Pratos com doces, bolos, colheres e copos"
                   />
-                  <figcaption class="details">
-                    <span>Infantil</span>
-                  </figcaption>
-                </figure>
-                <figure class="item">
+                  Infantil
+                </label>
+
+                <input type="radio" name="theme" id="graduation" />
+                <label for="graduation" class="item">
                   <img
                     src="./assets/graduation.svg"
                     alt="Chapeu de formatura"
                   />
-                  <figcaption class="details">
-                    <span>Formatura</span>
-                  </figcaption>
-                </figure>
-                <figure class="item">
+                  Formatura
+                </label>
+
+                <input type="radio" name="theme" id="marriage" />
+                <label for="marriage" class="item">
                   <img
                     src="./assets/marriage.svg"
                     alt="Imagem de duas alianças"
                   />
-                  <figcaption class="details">
-                    <span>Casamento</span>
-                  </figcaption>
-                </figure>
-                <figure class="item">
+                  Casamento
+                </label>
+
+                <input type="radio" name="theme" id="baby-shower" />
+                <label for="baby-shower" class="item">
                   <img
                     src="./assets/baby-shower.svg"
                     alt="Imagem de uma flor e um lenço umidecido"
                   />
-                  <figcaption class="details">
-                    <span>Chá de bebê</span>
-                  </figcaption>
-                </figure>
-                <figure class="item">
+                  Chá de bebê
+                </label>
+
+                <input type="radio" name="theme" id="bridal-shower" />
+                <label for="bridal-shower" class="item">
                   <img
                     src="./assets/bridal-shower.svg"
                     alt="Imagem de uma cozinha"
                   />
-                  <figcaption class="details">
-                    <span>Chá de panela</span>
-                  </figcaption>
-                </figure>
-                <figure class="item">
+                  Chá de panela
+                </label>
+
+                <input type="radio" name="theme" id="carnival" />
+                <label for="carnival" class="item">
                   <img src="./assets/carnival.svg" alt="Confetes de carnaval" />
-                  <figcaption class="details">
-                    <span>Carnaval</span>
-                  </figcaption>
-                </figure>
-                <figure class="item">
+                  Carnaval
+                </label>
+
+                <input type="radio" name="theme" id="easter" />
+                <label for="easter" class="item">
                   <img
                     src="./assets/Easter.svg"
                     alt="Enfeite de ovo de páscoa"
                   />
-                  <figcaption class="details">
-                    <span>Páscoa</span>
-                  </figcaption>
-                </figure>
-                <figure class="item">
+                  Páscoa
+                </label>
+
+                <input type="radio" name="theme" id="saint-john" />
+                <label for="saint-john" class="item">
                   <img
                     src="./assets/saint-john.svg"
                     alt="Bandeirinhas de são joão"
                   />
-                  <figcaption class="details">
-                    <span>São João</span>
-                  </figcaption>
-                </figure>
-                <figure class="item">
+                  São João
+                </label>
+
+                <input type="radio" name="theme" id="halloween" />
+                <label for="halloween" class="item">
                   <img
                     src="./assets/Halloween.svg"
                     alt="Morangas de halloween"
                   />
-                  <figcaption class="details">
-                    <span>Halloween</span>
-                  </figcaption>
-                </figure>
-                <figure class="item">
+                  Halloween
+                </label>
+
+                <input type="radio" name="theme" id="christmas" />
+                <label for="christmas" class="item">
                   <img
                     src="./assets/christmas.svg"
                     alt="Duas caixas de presentes"
                   />
-                  <figcaption class="details">
-                    <span>Natal</span>
-                  </figcaption>
-                </figure>
-                <figure class="item">
+                  Natal
+                </label>
+
+                <input type="radio" name="theme" id="other" />
+                <label for="other" class="item">
                   <img
                     src="./assets/other.svg"
                     alt="Circulo de pessoas com o copos na mão"
                   />
-                  <figcaption class="details">
-                    <span>Outro</span>
-                  </figcaption>
-                </figure>
+                  Outro
+                </label>
               </section>
-
               <div class="switch-toggle">
                 <div class="switch">
-                  <input type="checkbox" id="theme-toggle" class="theme-checkbox" />
+                  <input
+                    type="checkbox"
+                    id="theme-toggle"
+                    class="theme-checkbox"
+                  />
                   <label class="slider" for="theme-toggle"></label>
                 </div>
                 <span class="toggle-text"></span>
@@ -309,19 +318,84 @@
 
               <div class="inputFile">
                 <label for="">Foto de capa</label>
-                <div class="dropFile">
-                  <input
-                    type="file"
-                    id="birth"
-                    name="birth"
-                    accept=".pdf, .jpg, .png"
+                <input
+                  type="file"
+                  id="birth"
+                  name="birth"
+                  accept=".pdf, .jpg, .png"
+                />
+                <img src="assets/icons/upload.svg" alt="" />
+                <span> Selecionar </span>
+                <p>Nenhum arquivo selecionado</p>
+                <div class="error">
+                  <img
+                    src="assets/icons/circle-alert.svg"
+                    alt="ícone de alerta vermelho"
                   />
-                  <img src="assets/icons/upload.svg" alt="" />
-                  <span> Selecionar </span>
-                  <p>Nenhum arquivo selecionado</p>
+                  <span>Error message</span>
                 </div>
               </div>
             </fieldset>
+            <section class="contact">
+              <div class="legendTitle">
+                <img src="./assets/icons/contact.svg" alt="" />
+                <legend>Dados para contato'</legend>
+              </div>
+
+              <div class="inputWrapper">
+                <label for="name">Nome</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Nome completo"
+                />
+              </div>
+
+              <div class="row">
+                <div class="inputWrapper">
+                  <label for="email">E-mail</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    lang="pt-BR"
+                    placeholder="exemplo@email.com"
+                  />
+                </div>
+
+                <div class="inputWrapper">
+                  <label for="phone">Telefone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="number"
+                    placeholder="(99) 99999-9999 "
+                  />
+                </div>
+              </div>
+            </section>
+            <section class="termsWrapper inputWrapper checkboxWrapper">
+              <div class="checkboxImage"></div>
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms">
+                Li e concordo com os <a href="#">Termos e Condições</a> e com a
+                <a href="#">Política de Privacidade</a>
+              </label>
+              <input type="checkbox" name="termsEmail" id="termsEmail" />
+              <label for="termsEmail">
+                Aceito receber atualizações e promoções por e-mail
+              </label>
+              <input type="checkbox" name="termsSms" id="termsSms" />
+              <label for="termsSms">
+                Aceito receber atualizações e promoções por SMS
+              </label>
+
+              <div class="actionsWrapper">
+                <img src="assets/icons/ticket.svg" alt="" />
+                <button class="btnPrimary" type="submit">Gerar convite</button>
+              </div>
+            </section>
           </form>
         </div>
       </main>

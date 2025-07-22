@@ -15,3 +15,9 @@ fieldset {
   font: var(--heading-sm);
   margin: 4.8rem 0 2.4rem;
 }
+
+.actionsWrapper {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
