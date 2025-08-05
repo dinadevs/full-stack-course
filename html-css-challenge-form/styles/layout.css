@@ -5,12 +5,12 @@
 
   height: 100vh;
   overflow: hidden;
-  gap: 2.0rem;
-  padding: 2.0rem;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 aside {
-  position: relative;  
+  position: relative;
 }
 
 aside > img {
@@ -22,38 +22,34 @@ aside > img {
 }
 
 aside header {
-    position: absolute;
-    padding: 3.2rem;
-    z-index: 10;
-    top: 0;
-    left: 0;
+  position: absolute;
+  padding: 3.2rem;
+  z-index: 10;
+  top: 0;
+  left: 0;
 
-    & > img {
-      height: 4.8rem;
-    }
-
-    & h1 {
-      font: var(--txt-logo);
-      color: var(--pink);
-      padding: 1.6rem 0 0.4rem;
-    }
-
-   & p {
-      font-family: var(--body-xs-regular);
-    }
-  }
-
-main {
-  background-color: var(--shape-body);
-  overflow: auto;
-  border-radius: 1.2rem ;
-  
-  & .mainContainer {
-    max-width: 56.0rem;
-    margin: 8.0rem auto;
+  & > img {
+    height: 4.8rem;
   }
 
   & h1 {
-      font: var(--heading-md);   
+    font: var(--txt-logo);
+    color: var(--pink);
+    padding: 1.6rem 0 0.4rem;
+  }
+
+  & p {
+    font: var(--body-md-regular);
+  }
+}
+
+.mainContainer {
+  background-color: var(--shape-body);
+  overflow: auto;
+  border-radius: 1.2rem;
+  padding: 80px 130.5px;
+
+  & h1 {
+    font: var(--heading-md);
   }
 }

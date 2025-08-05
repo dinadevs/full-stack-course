@@ -6,63 +6,58 @@
 
 :root {
   font-size: 62.5%;
-  
+
   --font-leckerli: "Leckerli One", cursive;
-  --font-baloo: "Baloo 2", sans-serif;  
+  --font-baloo: "Baloo 2", sans-serif;
   --font-open-sans: "Open Sans", sans-serif;
 
-  --txt-logo: 400 4.0rem var(--font-leckerli);
+  --txt-logo: 400 4rem var(--font-leckerli);
 
-  --heading-md: 700 2.8rem var(--font-baloo); 
+  --heading-md: 700 2.8rem var(--font-baloo);
   --heading-sm: 700 1.8rem var(--font-baloo);
 
-  --body-md-regular: 400 1.6rem var(--font-open-sans);     
+  --body-md-regular: 300 1.6rem var(--font-open-sans);
   --body-md-semibold: 600 1.6rem var(--font-open-sans);
 
   --body-sm-regular: 400 1.4rem var(--font-open-sans);
   --body-sm-semibold: 600 1.4rem var(--font-open-sans);
 
-  --body-xs-regular: 400 1.2rem var(--font-open-sans);  
+  --body-xs-regular: 400 1.2rem var(--font-open-sans);
   --body-xs-semibold: 600 1.2rem var(--font-open-sans);
 
-  --txt-body: #C8CDD0;
-  --txt-heading: #F9F9F9;
+  --txt-body: #c8cdd0;
+  --txt-heading: #f9f9f9;
 
   --shape-background: #131516;
   --shape-body: #212427;
-  --shape-button: #2D3136;
-  --shape-hover: #383D42;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
 
-  --input-base: #1C1F21;
-  --input-stroke: #363B40;
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
   --input-placeholder: #869198;
-  
-  --danger: #FF5959;  
-  
-  --lime: #E1FF59;  
-  --purple: #B259FF;  
-  --fuschia: #FF59F9;  
-  --pink: #FF598B;  
-  --orange: #FF8B59;  
-  --yellow: #FFCD59;  
-  --green: #59FF91;  
-  --cyan: #59FFF9;  
-  --navy: #6A59FF;  
 
-  --brand-dark: #1D6FB6;  
-  --brand-mid: #3487CF;  
-  --brand-light: #59B2FF;    
+  --danger: #ff5959;
+
+  --lime: #e1ff59;
+  --purple: #b259ff;
+  --fuschia: #ff59f9;
+  --pink: #ff598b;
+  --orange: #ff8b59;
+  --yellow: #ffcd59;
+  --green: #59ff91;
+  --cyan: #59fff9;
+  --navy: #6a59ff;
+
+  --brand-dark: #1d6fb6;
+  --brand-mid: #3487cf;
+  --brand-light: #59b2ff;
 }
 
 body {
   overflow: hidden;
   font-family: var(--font-open-sans);
   color: var(--txt-heading);
-}
-
-.mainContainer {
-  width: 560px;
-  height: 1712px;
 }
 
 img {
@@ -72,15 +67,13 @@ img {
 
 .flex {
   display: flex;
- }
-
- .flex1 {
-  flex: 1;
- }
-
-.legendTitle {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
 }
 
+.flex1 {
+  flex: 1;
+}
+
+legend {
+  gap: 1.2rem;
+  padding: 4.8rem 0 2.4rem;
+}

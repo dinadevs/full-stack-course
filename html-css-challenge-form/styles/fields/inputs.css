@@ -7,21 +7,26 @@ select {
   border-radius: 0.8rem;
   background: var(--input-base);
   border: 1px solid var(--input-stroke);
-  padding: 1.6rem;
+  padding: 1.4rem 1.6rem;
+  color: var(--txt-heading);
 }
 
 label {
   font: var(--body-sm-regular);
   color: var(--input-placeholder);
-  display: block;
-  margin-bottom: 1.2rem; 
 }
 
 input:focus,
 textarea:focus,
 select:focus {
   outline: .1rem solid var(--brand-light);
-  outline-offset: .1px;
+}
+
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border: 1px solid var(--danger);
+  outline: none;
 }
 
 .row, .selectWrapper .options{
@@ -29,12 +34,45 @@ select:focus {
   gap: 1.6rem;
 }
 
-.row .inputWrapper {
-  flex: 1;
-}
-
 .selectWrapper .options label {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+ 
+#startEvent, #endEvent {
+  text-transform: uppercase;
+  color: var(--input-placeholder);
+  &:focus {
+    color: var(--txt-heading);
+  }
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.inputWrapper, .selectWrapper, .textWrapper {
+  display: grid;
+  gap: 1.5rem;
+}
+
+input[required] + .error,
+textarea[required] + .error {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  font: var(--body-xs-regular);
+  color: var(--danger);
+}
+
+input:valid + .error,
+textarea:valid + .error {
+  display: none;
+}
+
+input:not(:focus) + .error,
+textarea:not(:focus) + .error {
+  display: none;
 }

@@ -1,9 +1,5 @@
 @import url(fields/index.css);
 
-form {
-  margin-top: 4.0rem;
-}
-
 fieldset {
   border: none;
 
@@ -11,13 +7,19 @@ fieldset {
   gap: 1.6rem;
 }
 
-.legendTitle {
+legend {
   font: var(--heading-sm);
-  margin: 4.8rem 0 2.4rem;
+  display: flex;
+  align-items: center;
+
+  & img {
+    width: 2.4rem;
+    height: auto;
+  }
 }
 
 .actionsWrapper {
-    margin-top: 3rem;
-    display: flex;
-    gap: 1rem;
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
 }

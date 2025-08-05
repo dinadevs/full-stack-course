@@ -28,376 +28,384 @@
         />
       </aside>
 
-      <main>
-        <div class="mainContainer">
-          <h1>Crie seu convite</h1>
+      <main class="mainContainer">
+        <h1>Crie seu convite</h1>
 
-          <form method="post" enctype="multipart/form-data">
-            <fieldset class="about">
-              <div class="legendTitle">
-                <img src="./assets/icons/calendar.svg" alt="" />
-                <legend>Sobre o evento</legend>
-              </div>
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="about">
+            <legend>
+              <img src="./assets/icons/calendar.svg" alt="" />
+              Sobre o evento
+            </legend>
 
-              <div class="inputWrapper">
-                <label for="title">Título</label>
-                <input
-                  id="title"
-                  name="title"
-                  type="text"
-                  placeholder="Nome do evento"
-                />
-              </div>
-
-              <div class="row">
-                <div class="inputWrapper">
-                  <label for="startEvent">Início</label>
-                  <input
-                    id="startEvent"
-                    name="startEvent"
-                    type="datetime-local"
-                    lang="pt-BR"
-                    placeholder="DD/MM/AAAA, --:--"
-                  />
-                </div>
-
-                <div class="inputWrapper">
-                  <label for="endEvent">Fim</label>
-                  <input
-                    id="endEvent"
-                    name="endEvent"
-                    type="datetime-local"
-                    lang="pt-BR"
-                    placeholder="DD/MM/AAAA, --:--"
-                  />
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="selectWrapper">
-                  <label>Tipo</label>
-                  <div class="toggle-group">
-                    <div class="toggle-option">
-                      <input
-                        type="radio"
-                        name="type"
-                        value="presencial"
-                        checked
-                      />
-                      <img src="./assets/icons/building.svg" alt="Presencial" />
-                      <label>Presencial</label>
-                    </div>
-
-                    <div class="toggle-option">
-                      <img src="./assets/icons/video.svg" alt="Online" />
-                      <input
-                        type="radio"
-                        name="type"
-                        id="type"
-                        value="online"
-                      />
-                      <label for="type">Online</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="inputWrapper">
-                  <label for="location">Local</label>
-                  <input
-                    id="location"
-                    name="location"
-                    type="url"
-                    placeholder="Link ou endereço"
-                  />
-                </div>
-              </div>
-
-              <div class="textWrapper">
-                <label for="Description">Descrição</label>
-                <textarea
-                  name="Description"
-                  id="Description"
-                  cols="30"
-                  rows="5"
-                  placeholder="Detalhes do evento"
-                ></textarea>
-              </div>
-            </fieldset>
-
-            <fieldset class="customization">
-              <div class="legendTitle">
-                <img src="./assets/icons/paintbrush-vertical.svg" alt="" />
-                <legend>Personalização</legend>
-              </div>
-
-              <label for="title">Cor principal</label>
-              <div class="radioWrapper">
-                <label
-                  ><input type="radio" name="color" value="danger" /><span
-                    class="colorOption danger"
-                    title="danger"
-                  ></span
-                ></label>
-                <label
-                  ><input type="radio" name="color" value="lime" /><span
-                    class="colorOption lime"
-                    title="lime"
-                  ></span
-                ></label>
-                <label
-                  ><input type="radio" name="color" value="purple" /><span
-                    class="colorOption purple"
-                    title="purple"
-                  ></span
-                ></label>
-                <label
-                  ><input type="radio" name="color" value="fuschia" /><span
-                    class="colorOption fuschia"
-                    title="fuschia"
-                  ></span
-                ></label>
-                <label
-                  ><input type="radio" name="color" value="pink" /><span
-                    class="colorOption pink"
-                    title="pink"
-                  ></span
-                ></label>
-                <label
-                  ><input type="radio" name="color" value="orange" /><span
-                    class="colorOption orange"
-                    title="orange"
-                  ></span
-                ></label>
-                <label
-                  ><input type="radio" name="color" value="yellow" /><span
-                    class="colorOption yellow"
-                    title="yellow"
-                  ></span
-                ></label>
-                <label
-                  ><input type="radio" name="color" value="green" /><span
-                    class="colorOption green"
-                    title="green"
-                  ></span
-                ></label>
-                <label
-                  ><input type="radio" name="color" value="cyan" /><span
-                    class="colorOption cyan"
-                    title="cyan"
-                  ></span
-                ></label>
-                <label
-                  ><input type="radio" name="color" value="navy" /><span
-                    class="colorOption navy"
-                    title="navy"
-                  ></span
-                ></label>
-                <label
-                  ><input type="radio" name="color" value="brand-light" /><span
-                    class="colorOption brand-light"
-                    title="brand-light"
-                  ></span
-                ></label>
-              </div>
-
-              <section class="theme">
-                <legend>Tema do evento</legend>
-                <input type="radio" name="theme" id="birthday" />
-                <label for="birthday" class="item">
-                  <img src="./assets/birthday.svg" alt="Bolo de aniversário" />
-                  Aniversário
-                </label>
-
-                <input type="radio" name="theme" id="children" />
-                <label for="children" class="item">
-                  <img
-                    src="./assets/children's.svg"
-                    alt="Pratos com doces, bolos, colheres e copos"
-                  />
-                  Infantil
-                </label>
-
-                <input type="radio" name="theme" id="graduation" />
-                <label for="graduation" class="item">
-                  <img
-                    src="./assets/graduation.svg"
-                    alt="Chapeu de formatura"
-                  />
-                  Formatura
-                </label>
-
-                <input type="radio" name="theme" id="marriage" />
-                <label for="marriage" class="item">
-                  <img
-                    src="./assets/marriage.svg"
-                    alt="Imagem de duas alianças"
-                  />
-                  Casamento
-                </label>
-
-                <input type="radio" name="theme" id="baby-shower" />
-                <label for="baby-shower" class="item">
-                  <img
-                    src="./assets/baby-shower.svg"
-                    alt="Imagem de uma flor e um lenço umidecido"
-                  />
-                  Chá de bebê
-                </label>
-
-                <input type="radio" name="theme" id="bridal-shower" />
-                <label for="bridal-shower" class="item">
-                  <img
-                    src="./assets/bridal-shower.svg"
-                    alt="Imagem de uma cozinha"
-                  />
-                  Chá de panela
-                </label>
-
-                <input type="radio" name="theme" id="carnival" />
-                <label for="carnival" class="item">
-                  <img src="./assets/carnival.svg" alt="Confetes de carnaval" />
-                  Carnaval
-                </label>
-
-                <input type="radio" name="theme" id="easter" />
-                <label for="easter" class="item">
-                  <img
-                    src="./assets/Easter.svg"
-                    alt="Enfeite de ovo de páscoa"
-                  />
-                  Páscoa
-                </label>
-
-                <input type="radio" name="theme" id="saint-john" />
-                <label for="saint-john" class="item">
-                  <img
-                    src="./assets/saint-john.svg"
-                    alt="Bandeirinhas de são joão"
-                  />
-                  São João
-                </label>
-
-                <input type="radio" name="theme" id="halloween" />
-                <label for="halloween" class="item">
-                  <img
-                    src="./assets/Halloween.svg"
-                    alt="Morangas de halloween"
-                  />
-                  Halloween
-                </label>
-
-                <input type="radio" name="theme" id="christmas" />
-                <label for="christmas" class="item">
-                  <img
-                    src="./assets/christmas.svg"
-                    alt="Duas caixas de presentes"
-                  />
-                  Natal
-                </label>
-
-                <input type="radio" name="theme" id="other" />
-                <label for="other" class="item">
-                  <img
-                    src="./assets/other.svg"
-                    alt="Circulo de pessoas com o copos na mão"
-                  />
-                  Outro
-                </label>
-              </section>
-              <div class="switch-toggle">
-                <div class="switch">
-                  <input
-                    type="checkbox"
-                    id="theme-toggle"
-                    class="theme-checkbox"
-                  />
-                  <label class="slider" for="theme-toggle"></label>
-                </div>
-                <span class="toggle-text"></span>
-              </div>
-
-              <div class="inputFile">
-                <label for="">Foto de capa</label>
-                <input
-                  type="file"
-                  id="birth"
-                  name="birth"
-                  accept=".pdf, .jpg, .png"
-                />
-                <img src="assets/icons/upload.svg" alt="" />
-                <span> Selecionar </span>
-                <p>Nenhum arquivo selecionado</p>
-                <div class="error">
+            <div class="inputWrapper">
+              <label for="title">Título</label>
+              <input
+                id="title"
+                name="title"
+                type="text"
+                placeholder="Nome do evento"
+                required
+              />
+              <div class="error">
                   <img
                     src="assets/icons/circle-alert.svg"
                     alt="ícone de alerta vermelho"
                   />
-                  <span>Error message</span>
-                </div>
+                  <span>Campo obrigatório</span>
               </div>
-            </fieldset>
-            <section class="contact">
-              <div class="legendTitle">
-                <img src="./assets/icons/contact.svg" alt="" />
-                <legend>Dados para contato'</legend>
-              </div>
+            </div>
 
-              <div class="inputWrapper">
-                <label for="name">Nome</label>
+            <div class="row">
+              <div class="inputWrapper flex1">
+                <label for="startEvent">Início</label>
                 <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Nome completo"
+                  id="startEvent"
+                  name="startEvent"
+                  type="datetime-local"
+                  lang="pt-BR"
                 />
               </div>
 
-              <div class="row">
-                <div class="inputWrapper">
-                  <label for="email">E-mail</label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    lang="pt-BR"
-                    placeholder="exemplo@email.com"
-                  />
-                </div>
+              <div class="inputWrapper flex1">
+                <label for="endEvent">Fim</label>
+                <input
+                  id="endEvent"
+                  name="endEvent"
+                  type="datetime-local"
+                  lang="pt-BR"
+                />
+              </div>
+            </div>
 
-                <div class="inputWrapper">
-                  <label for="phone">Telefone</label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="number"
-                    placeholder="(99) 99999-9999 "
-                  />
+            <div class="row">
+              <div class="selectWrapper flex1">
+                <label>Tipo</label>
+                <div class="toggle-group">
+                  <div class="toggle-option">
+                    <input
+                      type="radio"
+                      name="type"
+                      id="presencial"
+                      value="presencial"
+                      checked
+                    />
+                    <img src="./assets/icons/building.svg" alt="Presencial" />
+                    <label for="presencial">Presencial</label>
+                  </div>
+
+                  <div class="toggle-option">
+                    <input
+                      type="radio"
+                      name="type"
+                      id="online"
+                      value="online"
+                    />
+
+                    <img src="./assets/icons/video.svg" alt="Online" />
+                    <label for="online">Online</label>
+                  </div>
                 </div>
               </div>
+
+              <div class="inputWrapper flex1">
+                <label for="location">Local</label>
+                <input
+                  id="location"
+                  name="location"
+                  type="text"
+                  placeholder="Link ou endereço"
+                />
+              </div>
+            </div>
+
+            <div class="textWrapper">
+              <label for="Description">Descrição</label>
+              <textarea
+                name="Description"
+                id="Description"
+                rows="5"
+                placeholder="Detalhes do evento"
+                required
+              ></textarea>
+              <div class="error">
+                  <img
+                    src="assets/icons/circle-alert.svg"
+                    alt="ícone de alerta vermelho"
+                  />
+                  <span>Campo obrigatório</span>
+                </div>
+              
+            </div>
+          </fieldset>
+
+          <!-- <fieldset class="customization">
+            <legend>
+              <img src="./assets/icons/paintbrush-vertical.svg" alt="" />
+              Personalização
+            </legend>
+
+            <label for="title">Cor principal</label>
+            <div class="radioWrapper">
+              <label
+                ><input type="radio" name="color" value="danger" /><span
+                  class="colorOption danger"
+                  title="danger"
+                ></span
+              ></label>
+              <label
+                ><input type="radio" name="color" value="lime" /><span
+                  class="colorOption lime"
+                  title="lime"
+                ></span
+              ></label>
+              <label
+                ><input type="radio" name="color" value="purple" /><span
+                  class="colorOption purple"
+                  title="purple"
+                ></span
+              ></label>
+              <label
+                ><input type="radio" name="color" value="fuschia" /><span
+                  class="colorOption fuschia"
+                  title="fuschia"
+                ></span
+              ></label>
+              <label
+                ><input type="radio" name="color" value="pink" /><span
+                  class="colorOption pink"
+                  title="pink"
+                ></span
+              ></label>
+              <label
+                ><input type="radio" name="color" value="orange" /><span
+                  class="colorOption orange"
+                  title="orange"
+                ></span
+              ></label>
+              <label
+                ><input type="radio" name="color" value="yellow" /><span
+                  class="colorOption yellow"
+                  title="yellow"
+                ></span
+              ></label>
+              <label
+                ><input type="radio" name="color" value="green" /><span
+                  class="colorOption green"
+                  title="green"
+                ></span
+              ></label>
+              <label
+                ><input type="radio" name="color" value="cyan" /><span
+                  class="colorOption cyan"
+                  title="cyan"
+                ></span
+              ></label>
+              <label
+                ><input type="radio" name="color" value="navy" /><span
+                  class="colorOption navy"
+                  title="navy"
+                ></span
+              ></label>
+              <label
+                ><input type="radio" name="color" value="brand-light" /><span
+                  class="colorOption brand-light"
+                  title="brand-light"
+                ></span
+              ></label>
+            </div>
+
+            <section class="theme">
+              <legend>Tema do evento</legend>
+              <input type="radio" name="theme" id="birthday" />
+              <label for="birthday" class="item">
+                <img src="./assets/birthday.svg" alt="Bolo de aniversário" />
+                Aniversário
+              </label>
+
+              <input type="radio" name="theme" id="children" />
+              <label for="children" class="item">
+                <img
+                  src="./assets/children's.svg"
+                  alt="Pratos com doces, bolos, colheres e copos"
+                />
+                Infantil
+              </label>
+
+              <input type="radio" name="theme" id="graduation" />
+              <label for="graduation" class="item">
+                <img src="./assets/graduation.svg" alt="Chapeu de formatura" />
+                Formatura
+              </label>
+
+              <input type="radio" name="theme" id="marriage" />
+              <label for="marriage" class="item">
+                <img
+                  src="./assets/marriage.svg"
+                  alt="Imagem de duas alianças"
+                />
+                Casamento
+              </label>
+
+              <input type="radio" name="theme" id="baby-shower" />
+              <label for="baby-shower" class="item">
+                <img
+                  src="./assets/baby-shower.svg"
+                  alt="Imagem de uma flor e um lenço umidecido"
+                />
+                Chá de bebê
+              </label>
+
+              <input type="radio" name="theme" id="bridal-shower" />
+              <label for="bridal-shower" class="item">
+                <img
+                  src="./assets/bridal-shower.svg"
+                  alt="Imagem de uma cozinha"
+                />
+                Chá de panela
+              </label>
+
+              <input type="radio" name="theme" id="carnival" />
+              <label for="carnival" class="item">
+                <img src="./assets/carnival.svg" alt="Confetes de carnaval" />
+                Carnaval
+              </label>
+
+              <input type="radio" name="theme" id="easter" />
+              <label for="easter" class="item">
+                <img src="./assets/Easter.svg" alt="Enfeite de ovo de páscoa" />
+                Páscoa
+              </label>
+
+              <input type="radio" name="theme" id="saint-john" />
+              <label for="saint-john" class="item">
+                <img
+                  src="./assets/saint-john.svg"
+                  alt="Bandeirinhas de são joão"
+                />
+                São João
+              </label>
+
+              <input type="radio" name="theme" id="halloween" />
+              <label for="halloween" class="item">
+                <img src="./assets/Halloween.svg" alt="Morangas de halloween" />
+                Halloween
+              </label>
+
+              <input type="radio" name="theme" id="christmas" />
+              <label for="christmas" class="item">
+                <img
+                  src="./assets/christmas.svg"
+                  alt="Duas caixas de presentes"
+                />
+                Natal
+              </label>
+
+              <input type="radio" name="theme" id="other" />
+              <label for="other" class="item">
+                <img
+                  src="./assets/other.svg"
+                  alt="Circulo de pessoas com o copos na mão"
+                />
+                Outro
+              </label>
             </section>
-            <section class="termsWrapper inputWrapper checkboxWrapper">
-              <div class="checkboxImage"></div>
+            <div class="switch-toggle">
+              <div class="switch">
+                <input
+                  type="checkbox"
+                  id="theme-toggle"
+                  class="theme-checkbox"
+                />
+                <label class="slider" for="theme-toggle"></label>
+              </div>
+              <span class="toggle-text"></span>
+            </div>
+
+            <div class="inputFile">
+              <label for="">Foto de capa</label>
+              <input
+                type="file"
+                id="birth"
+                name="birth"
+                accept=".pdf, .jpg, .png"
+              />
+              <img src="assets/icons/upload.svg" alt="" />
+              <span> Selecionar </span>
+              <p>Nenhum arquivo selecionado</p>
+              <div class="error">
+                <img
+                  src="assets/icons/circle-alert.svg"
+                  alt="ícone de alerta vermelho"
+                />
+                <span>Campo obrigatório</span>
+              </div>
+            </div>
+          </fieldset>
+          <section class="contact">
+            <legend>
+              <img src="./assets/icons/contact.svg" alt="" />
+              Dados para contato
+            </legend>
+
+            <div class="inputWrapper">
+              <label for="name">Nome</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Nome completo"
+              />
+            </div>
+
+            <div class="row">
+              <div class="inputWrapper">
+                <label for="email">E-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  lang="pt-BR"
+                  placeholder="exemplo@email.com"
+                />
+              </div>
+
+              <div class="inputWrapper">
+                <label for="phone">Telefone</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="number"
+                  placeholder="(99) 99999-9999 "
+                />
+              </div>
+            </div>
+          </section>
+          <section class="termsWrapper checkboxWrapper">
+            <label for="terms">
               <input type="checkbox" name="terms" id="terms" />
-              <label for="terms">
-                Li e concordo com os <a href="#">Termos e Condições</a> e com a
+              <span>
+                Li e concordo com os
+                <a href="#">Termos e Condições</a> e com a
                 <a href="#">Política de Privacidade</a>
-              </label>
-              <input type="checkbox" name="termsEmail" id="termsEmail" />
-              <label for="termsEmail">
-                Aceito receber atualizações e promoções por e-mail
-              </label>
-              <input type="checkbox" name="termsSms" id="termsSms" />
-              <label for="termsSms">
-                Aceito receber atualizações e promoções por SMS
-              </label>
+              </span>
+            </label>
 
-              <div class="actionsWrapper">
-                <img src="assets/icons/ticket.svg" alt="" />
-                <button class="btnPrimary" type="submit">Gerar convite</button>
-              </div>
-            </section>
-          </form>
-        </div>
+            <label for="termsEmail">
+              <input type="checkbox" name="termsEmail" id="termsEmail" />
+              <span>>Aceito receber atualizações e promoções por e-mail</span>
+            </label>
+            <label for="termsSms">
+              <input type="checkbox" name="termsSms" id="termsSms" />
+              <span>Aceito receber atualizações e promoções por SMS</span>
+            </label>
+
+            <div class="actionsWrapper">
+              <img src="assets/icons/ticket.svg" alt="" />
+              <button class="btnPrimary" type="submit">Gerar convite</button>
+            </div>
+          </section> -->
+        </form>
       </main>
     </div>
   </body>
