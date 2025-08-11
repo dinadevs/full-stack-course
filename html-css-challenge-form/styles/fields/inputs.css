@@ -13,6 +13,11 @@ select {
 
 label {
   font: var(--body-sm-regular);
+  color: var(--txt-body);
+}
+
+input::placeholder  {
+  font: var(--body-md-regular);
   color: var(--input-placeholder);
 }
 
@@ -75,4 +80,11 @@ textarea:valid + .error {
 input:not(:focus) + .error,
 textarea:not(:focus) + .error {
   display: none;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  opacity: 0;
 }

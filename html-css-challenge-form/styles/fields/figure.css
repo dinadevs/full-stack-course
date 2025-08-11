@@ -2,29 +2,30 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.8rem;
-  border-radius: 8px;
 }
 
 .item {
+  font: var(--body-sm-regular);
+  text-align: center;
   background-color: var(--shape-button);
   border-radius: 0.8rem;
   border: 1px solid var(--input-stroke);
-  width: 134px;
-  height: 103px;
   padding: 0.4rem 0.4rem 0.8rem;
+  position: relative;
 }
 
 .item:hover,
 .item:focus-within {
   background-color: var(--shape-hover);
+  cursor: pointer;
 }
 
-input[type="radio"]:checked + .item {
+.item:has(input:checked) {
   border: 2px solid var(--brand-light);
   background-color: var(--shape-button);
 }
 
-.label {
-  text-align: center;
-  padding: 0.8rem;
+.item img {
+  width: 100%;
+  margin-bottom: 0.8rem;
 }

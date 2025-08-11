@@ -5,11 +5,8 @@
   gap: 1.2rem;
 }
 
-input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none;
-  position: absolute;
-  opacity: 0;
+.radioItem {
+  position: relative;
 }
 
 .colorOption {
@@ -19,14 +16,16 @@ input[type="radio"] {
   border-radius: 50%;
   border: 6px solid var(--shape-button);
   position: relative;
+  cursor: pointer;
 }
 
-input[type="radio"]:hover + .colorOption {
+.radioItem input:hover + .colorOption {
   border-color: var(--shape-hover); 
 }
 
-input[type="radio"]:checked + .colorOption {
-  border-color: var(--brand-light);
+.radioItem input:checked + .colorOption {
+  outline: 2px solid var(--brand-light);
+  outline-offset: -2px;
 }
 
 .colorOption.danger {

@@ -40,6 +40,6 @@
   font-weight: 600;
 }
 
-input[type="radio"]:checked + img {
+.toggle-option [type="radio"]:checked + img {
   filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(205deg) brightness(103%) contrast(103%);
 }
