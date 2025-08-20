@@ -1,33 +1,28 @@
-.termsWrapper {
-  margin-top: 3rem;
+.checkboxWrapper label {
+  position: relative;
   display: flex;
-  gap: 0.75rem;
-  align-items: flex-start;
-  font-family: var(--body-sm-semibold);
-
+  gap: 1.2rem;
+  cursor: pointer;
+  font-family: var(--body-sm-regular);
+ 
   & a {
-    text-decoration-line: underline;
     color: var(--brand-light);
   }
 }
 
-.checkboxWrapper {
-  position: relative;
-
-  & [type="checkbox"] {
-    all: unset;
-    position: absolute;
-    inset: 0;
-  }
-
-  .checkboxImage {
-    flex: 0 0 1.5rem;
-    height: 1.5rem;
-
-    background-image: url(../../assets/icons/undercheck.svg);
-  }
-
-  &:has(:checked) .checkboxImage {
-    background-image: url(../../assets/icons/checked.svg);
-  }
+.checkboxWrapper input[type="checkbox"] {
+  all: unset;
+  position: absolute;
+  inset: 0;
 }
+
+.checkboxWrapper .checkboxImage {
+  height: 2rem;
+  width: 2rem;
+  background-image: url(../../assets/icons/undercheck.svg);
+}
+
+.checkboxWrapper label:has(:checked) .checkboxImage {
+  background-image: url(../../assets/icons/checked.svg);
+}
+

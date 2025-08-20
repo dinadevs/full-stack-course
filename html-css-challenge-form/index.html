@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon">
   </head>
   <body>
     <div id="app">
@@ -343,7 +344,8 @@
               </div>
             </div>
           </fieldset>
-           <section class="contact">
+
+          <fieldset class="contact">
             <legend>
               <img src="./assets/icons/contact.svg" alt="" />
               Dados para contato
@@ -384,20 +386,20 @@
                 <input
                   id="phone"
                   name="phone"
-                  type="number"
+                  type="tel"
                   placeholder="(99) 99999-9999 "
                 />
               </div>
             </div>
-          </section>
-          <hr>
-          <section class="termsWrapper inputWrapper checkboxWrapper">
+          </fieldset>
+
+          <hr />
+
+          <fieldset class="checkboxWrapper">
             <label for="terms">
               <input type="checkbox" name="terms" id="terms" />
               <div class="checkboxImage"></div>
-                Li e concordo com os
-                <a href="#">Termos e Condições</a> e com a
-                <a href="#">Política de Privacidade</a>            
+              <span>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></span>
             </label>
 
             <label for="termsEmail">
@@ -412,11 +414,11 @@
               <span>Aceito receber atualizações e promoções por SMS</span>
             </label>
 
-            <div class="actionsWrapper">
+            <button>
               <img src="assets/icons/ticket.svg" alt="" />
-              <button class="btn" type="submit">Gerar convite</button>
-            </div>
-          </section>  
+              Gerar convite
+            </button>
+          </fieldset>
         </form>
       </main>
     </div>

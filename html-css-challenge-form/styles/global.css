@@ -85,5 +85,5 @@ legend {
 hr {
   border: none;
   border-top: 1px solid var(--input-stroke);
-  margin: 4.8rem auto 4.0rem auto;
+  margin-block: 4.8rem 4.0rem;
 }
