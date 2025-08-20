@@ -73,7 +73,17 @@ img {
   flex: 1;
 }
 
+.flex2 {
+  flex: 2;
+}
+
 legend {
   gap: 1.2rem;
   padding: 4.8rem 0 2.4rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--input-stroke);
+  margin: 4.8rem auto 4.0rem auto;
 }

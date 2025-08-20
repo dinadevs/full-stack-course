@@ -216,7 +216,7 @@
             </div>
 
             <label for="title">Tema do evento</label>
-            <div class="theme"> 
+            <div class="theme">
               <label for="birthday" class="item">
                 <input type="radio" name="theme" id="birthday" />
                 <img src="./assets/birthday.svg" alt="Bolo de aniversário" />
@@ -311,41 +311,39 @@
               </label>
             </div>
 
-            <!-- <div class="switch-toggle">
-              <label for="">Estilo</label>
-              <div class="switch">
-                <input
-                  type="checkbox"
-                  id="theme-toggle"
-                  class="theme-checkbox"
-                />
-                <label class="slider" for="theme-toggle"></label>
+            <div class="row">
+              <div class="inputWrapper flex1">
+                <label for="title">Estilo</label>
+                <div class="switch-toggle">
+                  <label class="switch" for="theme-toggle">
+                    <input type="checkbox" id="theme-toggle" />
+                    <span class="slider"></span>
+                  </label>
+                  <span class="toggle-text"></span>
+                </div>
               </div>
-              <span class="toggle-text">Escuro</span>
-              <span class="toggle-text">Claro</span>
-            </div>
 
-            <div class="inputFile">
-              <label for="">Foto de capa</label>
-              <input
-                type="file"
-                id="birth"
-                name="birth"
-                accept=".pdf, .jpg, .png"
-              />
-              <img src="assets/icons/upload.svg" alt="" />
-              <span> Selecionar </span>
-              <p>Nenhum arquivo selecionado</p>
-              <div class="error">
-                <img
-                  src="assets/icons/circle-alert.svg"
-                  alt="ícone de alerta vermelho"
-                />
-                <span>Campo obrigatório</span>
+              <div class="inputWrapper flex2">
+                <label for="birth">Foto de capa</label>
+                <div class="input-file">
+                  <div class="file-upload">
+                    <input
+                      type="file"
+                      id="birth"
+                      name="birth"
+                      accept=".pdf, .jpg, .png"
+                      required
+                    />
+                    <img src="assets/icons/upload.svg" alt="" />
+                    <span>Selecionar</span>
+                  </div>
+                  <span id="no-file">Nenhum arquivo selecionado</span>
+                  <span id="file-selected">Arquivo selecionado!</span>
+                </div>
               </div>
-            </div>  -->
+            </div>
           </fieldset>
-          <!-- <section class="contact">
+           <section class="contact">
             <legend>
               <img src="./assets/icons/contact.svg" alt="" />
               Dados para contato
@@ -358,11 +356,19 @@
                 name="name"
                 type="text"
                 placeholder="Nome completo"
+                required
               />
+              <div class="error">
+                <img
+                  src="assets/icons/circle-alert.svg"
+                  alt="ícone de alerta vermelho"
+                />
+                <span>Campo obrigatório</span>
+              </div>
             </div>
 
             <div class="row">
-              <div class="inputWrapper">
+              <div class="inputWrapper flex1">
                 <label for="email">E-mail</label>
                 <input
                   id="email"
@@ -373,7 +379,7 @@
                 />
               </div>
 
-              <div class="inputWrapper">
+              <div class="inputWrapper flex1">
                 <label for="phone">Telefone</label>
                 <input
                   id="phone"
@@ -384,30 +390,33 @@
               </div>
             </div>
           </section>
-          <section class="termsWrapper checkboxWrapper">
+          <hr>
+          <section class="termsWrapper inputWrapper checkboxWrapper">
             <label for="terms">
               <input type="checkbox" name="terms" id="terms" />
-              <span>
+              <div class="checkboxImage"></div>
                 Li e concordo com os
                 <a href="#">Termos e Condições</a> e com a
-                <a href="#">Política de Privacidade</a>
-              </span>
+                <a href="#">Política de Privacidade</a>            
             </label>
 
             <label for="termsEmail">
               <input type="checkbox" name="termsEmail" id="termsEmail" />
-              <span>>Aceito receber atualizações e promoções por e-mail</span>
+              <div class="checkboxImage"></div>
+              <span>Aceito receber atualizações e promoções por e-mail</span>
             </label>
+
             <label for="termsSms">
               <input type="checkbox" name="termsSms" id="termsSms" />
+              <div class="checkboxImage"></div>
               <span>Aceito receber atualizações e promoções por SMS</span>
             </label>
 
             <div class="actionsWrapper">
               <img src="assets/icons/ticket.svg" alt="" />
-              <button class="btnPrimary" type="submit">Gerar convite</button>
+              <button class="btn" type="submit">Gerar convite</button>
             </div>
-          </section> -->
+          </section>  
         </form>
       </main>
     </div>

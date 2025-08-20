@@ -1,0 +1,58 @@
+.switch-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 6.4rem;
+  height: 3.2rem;
+}
+
+#theme-toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: var(--input-base);
+  transition: 0.4s;
+  border-radius: 99.9rem;
+  border: 1px solid var(--input-stroke);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2.4rem;
+  width: 2.4rem;
+  inset: 0.4rem;
+  background-color: var(--input-stroke);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+#theme-toggle:checked + .slider {
+  background-color: var(--brand-light);
+}
+
+#theme-toggle:checked + .slider:before {
+  background-color: var(--txt-heading);
+  transform: translateX(3rem);
+}
+
+.toggle-text:after {
+  content: "Escuro";
+  font: var(--body-sm-regular);
+  color: var(--txt-heading);
+}
+
+.switch:has(#theme-toggle:checked) ~ .toggle-text:after {
+  content: "Claro";
+}

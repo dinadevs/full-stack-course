@@ -1,0 +1,50 @@
+.input-file {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  & > span {
+    font: var(--body-md-regular);
+    color: var(--input-placeholder);
+  }
+
+  .file-upload {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    gap: .8rem;
+    background: var(--shape-button);
+    border-radius: 0.8rem;
+    position: relative;
+    cursor: pointer;
+
+    & > span {
+      font: var(--body-sm-semibold);
+    }
+
+    & input {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.customization .row {
+  margin-top: 1.2rem;
+  gap: 1.6rem;
+}
+
+#file-selected {
+  display: none;
+}
+
+.input-file:has(input:valid) #no-file {
+  display: none;
+}
+
+.input-file:has(input:valid) #file-selected {
+  display: initial;
+}
