@@ -1,4 +1,3 @@
-
 *::before,
 *::after {
   box-sizing: border-box;
@@ -22,8 +21,8 @@
   --txt-color-secondary: #a1a1aa;
   --bd-color-primary: ■#f7b733;
   --bd-color-secondary: 口#FC4A1A;
-/* sources */
-  --ff-sans: 'Inter', system-ui, sans-serif;
+  /* sources */
+  --ff-sans: "Inter", system-ui, sans-serif;
   --fw-base: 400;
   --fw-md: 500;
   --fw-bold: 800;
@@ -33,6 +32,12 @@
   --fs-lg: 1.25rem;
   --fs-xl: 1.5rem;
   --fs-2xl: 2.5rem;
+
+  --py-base: 1rem;
+  --py-lg: 1.5rem;
+  --py-xl: 3rem;
+
+  --px-lg: 1.5rem;
 }
 
 html {
@@ -73,7 +78,7 @@ a {
   color: inherit;
 }
 
-ul[role='list'] {
+ul[role="list"] {
   list-style: none;
 }
 
@@ -82,5 +87,10 @@ ul[role='list'] {
     --fs-lg: 2rem;
     --fs-xl: 3rem;
     --fs-2xl: 4rem;
+
+    --py-base: 1.5rem;
+    --py-lg: 2.5rem;
+    --py-xl: 5rem;
+    --px-lg: 2rem;
   }
 }
