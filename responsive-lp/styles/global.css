@@ -48,6 +48,7 @@ html {
   line-height: 1.6;
   color: var(--txt-color-primary);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
