@@ -42,7 +42,7 @@ amount.addEventListener("input", () => {
       }
       total = formatCurrencyBRL(total).replace("R$", "")
 
-      result.textContent = total
+      result.textContent = `${total} Reais`
 
       footer.classList.add("show-result")
     } catch (error){
