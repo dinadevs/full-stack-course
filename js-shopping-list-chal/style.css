@@ -5,21 +5,17 @@
 }
 
 :root {
-  /* Background */
   --bg-primary: #f4f5fb;
   --bg-secondary: #ffffff;
 
-  /* Brand */
   --brand: #ca3884;
   --brand-hover: #a52c6b;
   --danger: #c93847;
 
-  /* Text */
   --txt-primary: #080b12;
   --txt-secondary: #374151;
   --txt-tertiary: #9ca3af;
 
-  /* Border */
   --bd-primary: #d1d5db;
   --bd-hover: #b9c2d0;
 
@@ -33,29 +29,40 @@ body {
   display: flex;
   justify-content: center;
 }
+main {
+  width: 627px;
+}
 
-.container img:first-child {
+.img-central {
   display: block;
   margin: 0 auto;
 }
+
 
 .back {
   color: #d14b72;
   text-decoration: none;
   font-size: 1.4rem;
   padding: 6.2rem 0 1.6rem;
-  display: flex;
+  display: inline-flex;
+  gap: 4px;
 }
-
 
 h1 {
   font-size: 2.4rem;
 }
 
+.item {
+  background: #fff;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  height: 49px;
+}
+
 .add-items {
   display: flex;
   gap: 1.6rem;
-
   padding: 4.4rem 0 4rem;
 }
 
@@ -63,15 +70,11 @@ h1 {
   flex: 1;
   padding: 0 0.8rem;
   border: 2px solid var(--bd-primary);
-
   background: #fff;
-}
+  height: 4.4rem;
 
-.add-items input,
-.add-items button,
-li,
-.toast {
-  border-radius: 1.2rem;
+  outline: none;
+  transition: border 0.2s ease;
 }
 
 .add-items button {
@@ -84,73 +87,88 @@ li,
   cursor: pointer;
 }
 
+.add-items button:hover {
+  background: var(--brand-hover);
+}
+
+.add-items input,
+.add-items button,
+.item,
+.toast {
+  border-radius: 1.2rem;
+}
+
+.add-items input:hover {
+  border-color: var(--bd-hover);
+}
+
+.add-items input:focus {
+  border-color: var(--brand);
+}
+
 ul {
   list-style: none;
-  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
 
-li {
-  background: #fff;
-  padding: 0.8rem 1.2rem;
+.checkbox {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 1.2rem;
-
-  height: 49px;
+  flex: 1;
+  cursor: pointer;
 }
 
-li input {
+.checkbox input {
+  display: none;
+}
+
+.radioImage {
   width: 1.6rem;
   height: 1.6rem;
+  background: url(assets/icons/checkbox.svg) no-repeat center;
+  background-size: contain;
   
 }
 
-li span {
-  flex: 1;
+.checkbox input:checked + .radioImage {
+  background-image: url(assets/icons/selected.svg);
+}
+
+.checkbox .text {
+  font-size: 1.4rem;
 }
 
 .rmv-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
   opacity: 0.6;
 }
 
-.rmv-btn:hover {
-  opacity: 1;
-}
-
-/* TOAST */
-.toast {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 1.2rem;
-  gap: 0.8rem;
-
-  
-  height: 44px;
-  left: calc(50% - 627px / 2 - 0.5px);
-  bottom: 137px;
-
-  background: var(--danger);
-}
-
-.toast.show {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.toast span {
+.rmv-btn, .style-icons {
+  background: none;
+  border: none;
   cursor: pointer;
-  font-size: 1.6rem;
 }
 
 .empty-state img {
   max-width: 50%;
 }
+
+.toast {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  gap: 0.8rem;
+  height: 44px;
+  background: var(--danger);
+  
+}
+
+.toast span {
+  font-size: 1.6rem;
+  cursor: pointer;
+  flex: 1;
+}
+

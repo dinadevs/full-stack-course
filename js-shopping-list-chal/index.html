@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
@@ -17,37 +17,39 @@
 
   <body>
     <main class="container">
-      <img src="assets/icons/logo.svg" alt="" />
-      <a href="#" class="back"> ← <strong>Back</strong> </a>
+      <img class="img-central" src="assets/icons/logo.svg" alt="Logo" />
+
+      <a href="#" class="back"> <- <strong>Back</strong> </a>
 
       <h1>Shopping of the week</h1>
 
       <form id="shoppingForm">
         <div class="add-items">
-          <input type="text" id="itemInput" placeholder="Adicionar novo item" />
+          <input
+            type="text"
+            id="itemInput"
+            placeholder="Adicionar novo item"
+          />
           <button type="submit" id="addBtn">Add item</button>
         </div>
       </form>
 
       <ul id="listItems">
         <li class="item">
-          <input type="checkbox" />
-          <span>Pão de forma</span>
-          <button class="rmv-btn">
-            <img src="assets/icons/trash.svg" alt="Remover item" />
-          </button>
-        </li>
-        
-        <li class="item">
-          <input type="checkbox" />
-          <span>Pão de forma</span>
+          <label class="checkbox">
+            <input type="checkbox" />
+            <span class="radioImage"></span>
+            <span class="text">Pão de forma</span>
+          </label>
+
           <button class="rmv-btn">
             <img src="assets/icons/trash.svg" alt="Remover item" />
           </button>
         </li>
       </ul>
+
       <div id="emptyState" class="empty-state">
-        <img src="assets/empty.png" alt="empty list" />
+        <img class="img-central" src="assets/empty.png" alt="empty list" />
       </div>
 
       <div class="toast" id="toast">
@@ -58,7 +60,6 @@
         </button>
       </div>
     </main>
-
     <script src="script.js"></script>
   </body>
 </html>
