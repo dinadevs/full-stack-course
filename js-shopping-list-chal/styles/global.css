@@ -1,7 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -21,23 +26,19 @@
 
   font-family: "Inter", sans-serif;
   font-size: 62.5%;
+
+  --px-lg: 1.5rem
 }
 
 body {
   background: var(--bg-primary);
   margin-top: 2.5rem;
-  display: flex;
-  justify-content: center;
-}
-main {
-  width: 627px;
 }
 
 .img-central {
   display: block;
   margin: 0 auto;
 }
-
 
 .back {
   color: #d14b72;
@@ -106,8 +107,11 @@ h1 {
   border-color: var(--brand);
 }
 
-ul {
+ul[role="list"] {
   list-style: none;
+}
+
+ul {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
