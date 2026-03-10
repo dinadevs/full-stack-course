@@ -37,8 +37,15 @@
 }
 
 html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   font-family: var(--font-family);
   color: var(--text-body);
+}
+
+body {
+  background-color: var(--shape-background);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -51,4 +58,9 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,0 +1,43 @@
+.header-nave {
+  max-width: 80rem;
+  width: 100%;
+  padding: 3.5rem 10rem;
+  margin-inline: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nave .button {
+  position: relative;
+  overflow: hidden;
+  font: Bold var( --fs-base)/100% var(--font-family);
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  gap: 8px;
+
+  background: var(--pink-dark);
+  border-radius: 0.5rem;
+}
+
+.header-nave .button::before {
+  content: "";
+  background-color: var(--pink-base);
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: 0;
+  clip-path: circle(0%);
+  transition: clip-path 500ms ease-in-out;
+}
+
+.header-nave .button span {
+  position: relative;
+  z-index: 1; 
+}
+
+.header-nave .button:hover::before {
+  clip-path: circle(100%);
+}
