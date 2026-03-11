@@ -48,13 +48,6 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 3rem;
-
-  color: var(--text-title);
-}
-
 h2 {
   font-weight: 500;
   font-size: 2rem;
