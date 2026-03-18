@@ -27,7 +27,7 @@
   font-family: "Inter", sans-serif;
   font-size: 62.5%;
 
-  --px-lg: 1.5rem
+  --px-lg: 1.5rem;
 }
 
 body {
@@ -67,17 +67,6 @@ h1 {
   padding: 4.4rem 0 4rem;
 }
 
-.add-items input {
-  flex: 1;
-  padding: 0 0.8rem;
-  border: 2px solid var(--bd-primary);
-  background: #fff;
-  height: 4.4rem;
-
-  outline: none;
-  transition: border 0.2s ease;
-}
-
 .add-items button {
   background: var(--brand);
   color: white;
@@ -97,10 +86,6 @@ h1 {
 .item,
 .toast {
   border-radius: 1.2rem;
-}
-
-.add-items input:hover {
-  border-color: var(--bd-hover);
 }
 
 .add-items input:focus {
@@ -125,8 +110,8 @@ ul {
   cursor: pointer;
 }
 
-.checkbox input {
-  display: none;
+.checkbox .text {
+  font-size: 1.4rem;
 }
 
 .radioImage {
@@ -134,22 +119,14 @@ ul {
   height: 1.6rem;
   background: url(assets/icons/checkbox.svg) no-repeat center;
   background-size: contain;
-  
-}
-
-.checkbox input:checked + .radioImage {
-  background-image: url(assets/icons/selected.svg);
-}
-
-.checkbox .text {
-  font-size: 1.4rem;
 }
 
 .rmv-btn {
   opacity: 0.6;
 }
 
-.rmv-btn, .style-icons {
+.rmv-btn,
+.style-icons {
   background: none;
   border: none;
   cursor: pointer;
@@ -167,7 +144,6 @@ ul {
   gap: 0.8rem;
   height: 44px;
   background: var(--danger);
-  
 }
 
 .toast span {
@@ -175,4 +151,3 @@ ul {
   cursor: pointer;
   flex: 1;
 }
-

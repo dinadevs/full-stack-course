@@ -1,0 +1,24 @@
+.add-items input {
+  flex: 1;
+  padding: 0 0.8rem;
+  border: 2px solid var(--bd-primary);
+  background: #fff;
+  height: 4.4rem;
+
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.add-items input:hover {
+  border-color: var(--bd-hover);
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox input:checked + .radioImage {
+  background-image: url(assets/icons/selected.svg);
+}
+
+
