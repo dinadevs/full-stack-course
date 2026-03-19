@@ -1,12 +1,13 @@
 main {
-    display: flex;
-    flex-wrap: wrap;
-    padding-block: 2.4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap: 2.4rem;
-    justify-content: space-between;
+    padding: 2.4rem;
+    width: 100%;
 }
 main img {
-    width: 30.5rem;
+    flex: 1 1 30.5rem; 
+    max-width: 100%;    
     height: 30.5rem;
     object-fit: cover;
 }

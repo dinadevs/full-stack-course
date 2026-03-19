@@ -61,5 +61,11 @@ a:hover {
     list-style-type: none;
 }
 
+@media (width < 80em) {
+    :root {
+        --txt-lg: bold 2.4rem/125% var(--font-family);
+    }
+}
+
 
 
