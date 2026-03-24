@@ -25,29 +25,12 @@
 
       <form id="shoppingForm">
         <div class="add-items">
-          <input
-            type="text"
-            id="itemInput"
-            placeholder="Adicionar novo item"
-          />
+          <input type="text" id="itemInput" placeholder="Adicionar novo item" />
           <button type="submit" id="addBtn">Add item</button>
         </div>
       </form>
 
-      <ul role="list" id="listItems">
-        <li class="item">
-          <label class="checkbox">
-            <input type="checkbox" />
-            <span class="radioImage"></span>
-            <span class="text">Pão de forma</span>
-          </label>
-
-          <button class="rmv-btn">
-            <img src="assets/icons/trash.svg" alt="Remover item" />
-          </button>
-        </li>
-      </ul>
-
+      <ul role="list" id="listItems"></ul>
       <div id="emptyState" class="empty-state">
         <img class="img-central" src="assets/empty.png" alt="empty list" />
       </div>
@@ -60,6 +43,6 @@
         </button>
       </div>
     </main>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
