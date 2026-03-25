@@ -1,43 +1,58 @@
-header {
-    padding-block: 3.2rem;
-    font:var(--txt-md)
+header > div {
+  padding-block: 3.2rem;
+  font: var(--txt-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#profile img{
-    width: 17.6rem;
-    height: 17.6rem;
+#profile img {
+  width: 17.6rem;
+  height: 17.6rem;
 }
 
 #profile {
-    display: flex;
-    gap: 3.2rem;
+  display: flex;
+  gap: 3.2rem;
 }
 
 #profile > div {
-    max-width: 38.4rem;
+  max-width: 38.4rem;
 }
 
 #profile h1 {
-    font: var(--txt-lg);
-    color: var(--txt-color-primary);
-    margin-bottom: .8rem;
+  font: var(--txt-lg);
+  color: var(--txt-color-primary);
+  margin-bottom: 0.8rem;
 }
 
 #info {
-    display: flex;
-    width: 28.0rem;
-    flex-direction: column;
-    gap: 1.6rem;
+  display: flex;
+  width: 28rem;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 #info li {
-    display: flex;
-    align-items: center;
-    gap: .8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+@media (width < 80em) {
+  #profile img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  header > div,
+  #profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #profile {
+    padding-bottom: 3.2rem;
+    gap: 1.6rem;
+  }
 }

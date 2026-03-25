@@ -7,10 +7,6 @@ nav {
     padding-block: 2.0rem;
 } 
 
-nav .container {
-    padding-inline: 3.2rem;
-}
-
 nav ul {
     display: flex;
     align-items: center;
@@ -30,3 +26,12 @@ nav ul li:last-child img{
     height: 4.0rem;
 }
 
+@media (width < 80em) {
+  #menuNav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem;
+    gap: .8rem;
+  }
+}

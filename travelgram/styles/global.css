@@ -21,16 +21,13 @@
     --txt-md: 1.4rem/170% var(--font-family);
     --txt-sm: 1.2rem/170% var(--font-family);
 
-    --px-lg: 2rem;
+    --px-lg: 3.2rem;
 }
 
 body {
     font: var(--txt);
     color: var(--txt-color-secondary);
     background-color: var(--bg-color);
-
-    width: 100%;    
-    margin-inline: auto;
 }
 
 .imgBorder {
@@ -46,11 +43,6 @@ a {
 
 a:hover {
     color: var(--brand-color);
-}
-
-
-.container {
-    padding-inline: 3.2rem;
 }
 
 .bgSurfaceColor {

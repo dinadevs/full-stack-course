@@ -1,5 +1,5 @@
 .container {
-  --max-width: 1216px;
+  --max-width: 80em;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
   margin-inline: auto;
 }
@@ -10,62 +10,10 @@
 
 @media (width < 80em) {
   .container {
-    --max-width: 80rem;
-    padding-inline: 0;
-  }
-
-  #menuNav {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.6rem;
-    gap: .8rem;
+    --max-width: 328px;
   }
 
   .desktop-only {
     display: none;
-  }
-
-  #profile img {
-    width: 12rem;
-    height: 12rem;
-  }
-
-  header .container,
-  #profile {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  #profile {
-    padding-bottom: 3.2rem;
-    gap: 1.6rem;
-  }
-
-  footer ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 1.6rem;
-  }
-
-  footer ul li:first-child {
-    flex-basis: 100%;
-    text-align: center;
-  }
-
-  footer ul li:first-child {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 1440px) {
-
-
-  main img {
-    width: 100%;
-    height: 30.5rem;
-    object-fit: cover;
   }
 }

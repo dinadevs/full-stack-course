@@ -10,3 +10,21 @@ footer ul li:first-child {
     margin-right: auto;
 }
 
+@media (width < 80em) {
+  footer ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.6rem;
+  }
+
+  footer ul li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  footer ul li:first-child {
+    margin-right: 0;
+  }
+}
