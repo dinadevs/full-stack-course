@@ -1,0 +1,140 @@
+/* ========== ASIDE CONTAINER ========== */
+aside {
+  background-color: #f9fbfa;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  max-width: 462px;
+  min-width: 600px;
+}
+
+/* ========== ASIDE HEADER ========== */
+aside header {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e4ece9;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+aside header p {
+  color: #4d5c57;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+aside header p span {
+  color: #4d5c57;
+  font-weight: 400;
+  font-size: 0.87rem;
+}
+
+aside header p i {
+  color: #cdd5d2;
+  margin: 0 0.5rem;
+  font-style: normal;
+}
+
+aside header h2 {
+  font-size: 1rem;
+  color: #1f2523;
+}
+
+aside header small {
+  color: #4d5c57;
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-right: 0.25rem;
+}
+
+/* ========== EXPENSE LIST ========== */
+aside ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  max-height: 310px;
+  min-height: 310px;
+
+  overflow-y: scroll;
+}
+
+/* ========== EXPENSE ITEM ========== */
+.expense {
+  display: flex;
+  align-items: center;
+  height: 38px;
+}
+
+.expense img:first-child {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.75rem;
+}
+
+.expense > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* ========== EXPENSE INFO ========== */
+.expense-info strong {
+  font-size: 0.87rem;
+  color: #1f2523;
+}
+
+.expense-info span {
+  font-size: 0.75rem;
+  color: #4d5c57;
+}
+
+/* ========== EXPENSE AMOUNT ========== */
+.expense-amount {
+  font-size: 0.87rem;
+  color: #1f2523;
+  font-weight: 600;
+}
+
+.expense-amount small {
+  font-size: 0.75rem;
+  color: #4d5c57;
+  font-weight: 400;
+  margin-right: 0.25rem;
+}
+
+/* ========== REMOVE ICON ========== */
+.remove-icon {
+  height: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.remove-icon:hover {
+  opacity: 0.7;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1100px) {
+  main,
+  aside {
+    min-width: 100%;
+  }
+
+  main section aside ul {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  aside header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
