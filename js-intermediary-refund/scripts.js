@@ -30,3 +30,12 @@ form.onsubmit = (event) => {
     created_at: new Date(),
   }
 }
+
+function expenseAdd(newExpense) {
+  try {
+    
+  } catch (error) {
+    alert("It was not possible to update the list of expenses.")
+    console.log(error)
+  }
+}
