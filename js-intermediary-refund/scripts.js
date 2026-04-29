@@ -54,14 +54,18 @@ function expenseAdd(newExpense) {
 
     expenseInfo.append(expenseName, expenseCategory);
 
-    //<span class="expense-amount"><small>R$</small>1.420,57</span>
     const expenseAmount = document.createElement("span")
     expenseAmount.classList.add("expense-amount")
     expenseAmount.innerHTML= `<small>$</small>${newExpense.amount
       .toUpperCase()
       .replace("$", "")}`
 
-    expenseItem.append(expenseIcon, expenseInfo, expenseAmount);
+    const removeIcon = document.createElement("img")
+    removeIcon.classList.add("remove-icon")  
+    removeIcon.setAttribute("src", "img/remove.svg")
+    removeIcon.setAttribute("alt", "remove")
+
+    expenseItem.append(expenseIcon, expenseInfo, expenseAmount, removeIcon);
     expenseList.append(expenseItem);
   } catch (error) {
     alert("It was not possible to update the list of expenses.");
