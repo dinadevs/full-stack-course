@@ -2,7 +2,6 @@ const form = document.querySelector("form");
 const amount = document.getElementById("amount");
 const expense = document.getElementById("expense");
 const category = document.getElementById("category");
-
 //list
 const expenseList = document.querySelector("ul");
 
@@ -55,7 +54,14 @@ function expenseAdd(newExpense) {
 
     expenseInfo.append(expenseName, expenseCategory);
 
-    expenseItem.append(expenseIcon, expenseInfo);
+    //<span class="expense-amount"><small>R$</small>1.420,57</span>
+    const expenseAmount = document.createElement("span")
+    expenseAmount.classList.add("expense-amount")
+    expenseAmount.innerHTML= `<small>$</small>${newExpense.amount
+      .toUpperCase()
+      .replace("$", "")}`
+
+    expenseItem.append(expenseIcon, expenseInfo, expenseAmount);
     expenseList.append(expenseItem);
   } catch (error) {
     alert("It was not possible to update the list of expenses.");
