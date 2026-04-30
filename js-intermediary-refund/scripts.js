@@ -81,40 +81,36 @@ function updateTotals() {
   try {
     const items = expenseList.children;
 
-    expenseQuantity.textContent = `${items.length} ${items.length > 1 ? "expenses" : "expense"}`;
+    expenseQuantity.textContent = `${items.length} ${
+      items.length > 1 ? "expenses" : "expense"
+    }`;
 
     let total = 0;
+
     for (let item = 0; item < items.length; item++) {
       const itemAmount = items[item].querySelector(".expense-amount");
 
-      let value = itemAmount.textContent
-        .replace(/[^\d]/g, "")
-        .replace(",", ".");
-      value = parseFloat(value);
+      let value = itemAmount.textContent;
+
+      value = value.replace(/\D/g, "");
+      value = Number(value) / 100;
 
       if (isNaN(value)) {
         return alert(
           "The total could not be calculated. Please check the values!",
         );
       }
-      let total = 0;
-      for (let item = 0; item < items.length; item++) {
-        const itemAmount = items[item].querySelector(".expense-amount");
 
-        let value = itemAmount.textContent
-          .replace(/[^\d]/g, "")
-          .replace(",", ".");
-        value = parseFloat(value);
-
-        if (isNaN(value)) {
-          return alert(
-            "The total could not be calculated. Please check the values!",
-          );
-        }
-        total += Number(value);
-      }
-      expenseTotal.textContent = total;
+      total += value;
     }
+
+    const symbolUSA = document.createElement("small");
+    symbolUSA.textContent = "$";
+
+    total = formatCurrencyUSA(total).replace("$", "");
+
+    expenseTotal.innerHTML = "";
+    expenseTotal.append(symbolUSA, total);
   } catch (error) {
     console.log(error);
     alert("It was not possible to update the totals.");
