@@ -4,6 +4,7 @@ const expense = document.getElementById("expense");
 const category = document.getElementById("category");
 //list
 const expenseList = document.querySelector("ul");
+const expenseTotal = document.querySelector("aside header h2");
 const expenseQuantity = document.querySelector("aside header p span");
 
 amount.oninput = () => {
@@ -55,22 +56,21 @@ function expenseAdd(newExpense) {
 
     expenseInfo.append(expenseName, expenseCategory);
 
-    const expenseAmount = document.createElement("span")
-    expenseAmount.classList.add("expense-amount")
-    expenseAmount.innerHTML= `<small>$</small>${newExpense.amount
+    const expenseAmount = document.createElement("span");
+    expenseAmount.classList.add("expense-amount");
+    expenseAmount.innerHTML = `<small>$</small>${newExpense.amount
       .toUpperCase()
-      .replace("$", "")}`
+      .replace("$", "")}`;
 
-    const removeIcon = document.createElement("img")
-    removeIcon.classList.add("remove-icon")  
-    removeIcon.setAttribute("src", "img/remove.svg")
-    removeIcon.setAttribute("alt", "remove")
+    const removeIcon = document.createElement("img");
+    removeIcon.classList.add("remove-icon");
+    removeIcon.setAttribute("src", "img/remove.svg");
+    removeIcon.setAttribute("alt", "remove");
 
     expenseItem.append(expenseIcon, expenseInfo, expenseAmount, removeIcon);
     expenseList.append(expenseItem);
 
-    updateTotals()
-
+    updateTotals();
   } catch (error) {
     alert("It was not possible to update the list of expenses.");
     console.log(error);
@@ -79,17 +79,44 @@ function expenseAdd(newExpense) {
 
 function updateTotals() {
   try {
-    const items = expenseList.children
+    const items = expenseList.children;
 
-  expenseQuantity.textContent = `${items.length} ${items.length > 1 ? "expenses" : "expense"}`
+    expenseQuantity.textContent = `${items.length} ${items.length > 1 ? "expenses" : "expense"}`;
 
-  let total = 0
-    for(let item = 0; item < items.length; item++) {
-      const itemAmount = items[item].querySelector(".expense-amount")
+    let total = 0;
+    for (let item = 0; item < items.length; item++) {
+      const itemAmount = items[item].querySelector(".expense-amount");
+
+      let value = itemAmount.textContent
+        .replace(/[^\d]/g, "")
+        .replace(",", ".");
+      value = parseFloat(value);
+
+      if (isNaN(value)) {
+        return alert(
+          "The total could not be calculated. Please check the values!",
+        );
+      }
+      let total = 0;
+      for (let item = 0; item < items.length; item++) {
+        const itemAmount = items[item].querySelector(".expense-amount");
+
+        let value = itemAmount.textContent
+          .replace(/[^\d]/g, "")
+          .replace(",", ".");
+        value = parseFloat(value);
+
+        if (isNaN(value)) {
+          return alert(
+            "The total could not be calculated. Please check the values!",
+          );
+        }
+        total += Number(value);
+      }
+      expenseTotal.textContent = total;
     }
-
   } catch (error) {
-    console.log(error)
-    alert("It was not possible to update the totals.")
+    console.log(error);
+    alert("It was not possible to update the totals.");
   }
 }
