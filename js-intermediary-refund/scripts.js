@@ -70,6 +70,7 @@ function expenseAdd(newExpense) {
     expenseItem.append(expenseIcon, expenseInfo, expenseAmount, removeIcon);
     expenseList.append(expenseItem);
 
+    formClear()
     updateTotals();
   } catch (error) {
     alert("It was not possible to update the list of expenses.");
@@ -124,3 +125,11 @@ expenseList.addEventListener("click", function(event){
   }
   updateTotals()
 })
+
+function formClear() {
+  expense.value = ""
+  category.value = ""
+  amount.value = ""
+
+  expense.focus()
+}
