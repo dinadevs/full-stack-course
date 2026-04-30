@@ -4,6 +4,7 @@ const expense = document.getElementById("expense");
 const category = document.getElementById("category");
 //list
 const expenseList = document.querySelector("ul");
+const expenseQuantity = document.querySelector("aside header p span");
 
 amount.oninput = () => {
   let value = amount.value.replace(/\D/g, "");
@@ -67,8 +68,22 @@ function expenseAdd(newExpense) {
 
     expenseItem.append(expenseIcon, expenseInfo, expenseAmount, removeIcon);
     expenseList.append(expenseItem);
+
+    updateTotals()
+
   } catch (error) {
     alert("It was not possible to update the list of expenses.");
     console.log(error);
+  }
+}
+
+function updateTotals() {
+  try {
+    const items = expenseList.children
+
+  expenseQuantity.textContent = `${items.length} ${items.length > 1 ? "expenses" : "expense"}`
+  } catch (error) {
+    console.log(error)
+    alert("It was not possible to update the totals.")
   }
 }
