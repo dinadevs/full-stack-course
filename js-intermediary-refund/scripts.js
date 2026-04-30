@@ -116,3 +116,11 @@ function updateTotals() {
     alert("It was not possible to update the totals.");
   }
 }
+
+expenseList.addEventListener("click", function(event){
+  if(event.target.classList.contains("remove-icon")) {
+    const itemRemove = event.target.closest(".expense")
+    itemRemove.remove()
+  }
+  updateTotals()
+})
