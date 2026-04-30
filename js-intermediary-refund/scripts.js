@@ -82,6 +82,12 @@ function updateTotals() {
     const items = expenseList.children
 
   expenseQuantity.textContent = `${items.length} ${items.length > 1 ? "expenses" : "expense"}`
+
+  let total = 0
+    for(let item = 0; item < items.length; item++) {
+      const itemAmount = items[item].querySelector(".expense-amount")
+    }
+
   } catch (error) {
     console.log(error)
     alert("It was not possible to update the totals.")
