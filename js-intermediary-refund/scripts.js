@@ -99,9 +99,7 @@ function expenseAdd(newExpense) {
 
     const expenseAmount = document.createElement("span");
     expenseAmount.classList.add("expense-amount");
-    expenseAmount.innerHTML = `<small>$</small>${newExpense.amount
-      .toUpperCase()
-      .replace("$", "")}`;
+    expenseAmount.innerHTML = `<small>$</small>${newExpense.amount.replace("$", "")}`;
 
     const removeIcon = document.createElement("img");
     removeIcon.classList.add("remove-icon");
