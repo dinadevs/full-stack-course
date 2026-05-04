@@ -36,6 +36,43 @@ form.onsubmit = (event) => {
   expenseAdd(newExpense);
 };
 
+category.addEventListener("change", () => {
+  if (category.value === "new") {
+    const newCategory = prompt("Enter new category name:");
+
+    if (newCategory && newCategory.trim() !== "") {
+      addNewCategory(newCategory);
+    }
+
+    category.value = "";
+  }
+});
+
+function addNewCategory(name) {
+  const value = name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "-");
+
+  const exists = [...category.options].some(opt => opt.value === value);
+
+  if (exists) {
+    alert("Category already exists!");
+    category.value = value;
+    return;
+  }
+
+  const option = document.createElement("option");
+  option.value = value;
+  option.textContent = name;
+
+  const addNewOption = category.querySelector('option[value="new"]');
+  category.insertBefore(option, addNewOption);
+
+  category.value = value;
+}
+
 function expenseAdd(newExpense) {
   try {
     const expenseItem = document.createElement("li");
@@ -44,6 +81,10 @@ function expenseAdd(newExpense) {
     const expenseIcon = document.createElement("img");
     expenseIcon.setAttribute("src", `./img/${newExpense.category_id}.svg`);
     expenseIcon.setAttribute("alt", newExpense.category_name);
+
+    expenseIcon.onerror = () => {
+      expenseIcon.setAttribute("src", "./img/others.svg");
+    };
 
     const expenseInfo = document.createElement("div");
     expenseInfo.classList.add("expense-info");
@@ -70,7 +111,7 @@ function expenseAdd(newExpense) {
     expenseItem.append(expenseIcon, expenseInfo, expenseAmount, removeIcon);
     expenseList.append(expenseItem);
 
-    formClear()
+    formClear();
     updateTotals();
   } catch (error) {
     alert("It was not possible to update the list of expenses.");
@@ -118,18 +159,18 @@ function updateTotals() {
   }
 }
 
-expenseList.addEventListener("click", function(event){
-  if(event.target.classList.contains("remove-icon")) {
-    const itemRemove = event.target.closest(".expense")
-    itemRemove.remove()
+expenseList.addEventListener("click", function (event) {
+  if (event.target.classList.contains("remove-icon")) {
+    const itemRemove = event.target.closest(".expense");
+    itemRemove.remove();
   }
-  updateTotals()
-})
+  updateTotals();
+});
 
 function formClear() {
-  expense.value = ""
-  category.value = ""
-  amount.value = ""
+  expense.value = "";
+  category.value = "";
+  amount.value = "";
 
-  expense.focus()
+  expense.focus();
 }
