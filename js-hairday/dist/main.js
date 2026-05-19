@@ -9,15 +9,15 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/main.js":
+/***/ "./src/main.js"
 /*!*********************!*\
   !*** ./src/main.js ***!
   \*********************/
-/***/ (() => {
+() {
 
-eval("\n\n//# sourceURL=webpack://hairday/./src/main.js?");
+eval("{\n\n//# sourceURL=webpack://hairday/./src/main.js?\n}");
 
-/***/ })
+/***/ }
 
 /******/ 	});
 /************************************************************************/
