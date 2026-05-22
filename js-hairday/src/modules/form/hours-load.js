@@ -1,47 +1,48 @@
-import dayjs from "dayjs"
-import { openHours } from "../../utils/open-hours.js"
-import { hoursClick } from "./hours-click.js"
+import dayjs from "dayjs";
+import { openHours } from "../../utils/open-hours.js";
+import { hoursClick } from "./hours-click.js";
 
-const hours = document.getElementById("hours")
+const hours = document.getElementById("hours");
 
-export function hoursLoad({date}) {
+export function hoursLoad({ date }) {
+  hours.innerHTML = "";
+
   const open = openHours.map((hour) => {
+    const [scheduleHour] = hour.split(":");
 
-    const [scheduleHour] = hour.split(":")
-
-    const isHourPast = dayjs(date).add(scheduleHour, "hour").isAfter(dayjs())
-    return({
+    const isHourPast = dayjs(date).add(scheduleHour, "hour").isAfter(dayjs());
+    return {
       hour,
       available: isHourPast,
-    })
-  })
+    };
+  });
 
-  open.forEach(({hour, available}) =>{
-    const li = document.createElement("li")
+  open.forEach(({ hour, available }) => {
+    const li = document.createElement("li");
 
-    li.classList.add("hour")
-    li.classList.add(available ? "hour-available" : "hour-unavailable")
+    li.classList.add("hour");
+    li.classList.add(available ? "hour-available" : "hour-unavailable");
 
-    li.textContent = hour
+    li.textContent = hour;
 
-    if (hour === "09:00"){
-      hourHeaderAdd("Morning")
-    } else if (hour === "13:00"){
-      hourHeaderAdd("Afternoon")
-    } else if (hour === "18:00"){
-      hourHeaderAdd("Night")
+    if (hour === "09:00") {
+      hourHeaderAdd("Morning");
+    } else if (hour === "13:00") {
+      hourHeaderAdd("Afternoon");
+    } else if (hour === "18:00") {
+      hourHeaderAdd("Night");
     }
 
-    hours.append(li)
-  })
+    hours.append(li);
+  });
 
-  hoursClick()
+  hoursClick();
 }
 
 function hourHeaderAdd(title) {
-  const header = document.createElement("li")
-  header.classList.add("hour-period")
-  header.textContent = title
+  const header = document.createElement("li");
+  header.classList.add("hour-period");
+  header.textContent = title;
 
-  hours.append(header)
+  hours.append(header);
 }
