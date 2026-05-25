@@ -5,6 +5,5 @@
       "name": "val",
       "when": "2026-05-26T22:00:00.000Z"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
