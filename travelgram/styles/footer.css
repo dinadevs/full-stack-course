@@ -1,30 +1,24 @@
-footer ul{
-    display: flex;
-    gap: 2.4rem;
-    padding-block: 2.4rem;
+footer ul {
+  display: flex;
+  gap: 2.4rem;
+  padding-block: 2.4rem;
 
-    font: 1.4rem/150% var(--font-family);
+  font: 1.4rem/150% var(--font-family);
 }
 
 footer ul li:first-child {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 @media (width < 80em) {
   footer ul {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     gap: 1.6rem;
   }
 
   footer ul li:first-child {
     flex-basis: 100%;
     text-align: center;
-  }
-
-  footer ul li:first-child {
-    margin-right: 0;
   }
 }
