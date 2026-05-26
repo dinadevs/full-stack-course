@@ -1,14 +1,14 @@
 {
   "schedules": [
     {
-      "id": "9dSCFf6DxHI",
-      "name": "Edna",
-      "when": "2026-05-26T22:00:00.000Z"
-    },
-    {
       "id": "fGjfofrSBRk",
       "name": "Maria Santos",
       "when": "2026-05-27T17:00:00.000Z"
+    },
+    {
+      "id": "Cyomu9Zr4f4",
+      "name": "Amanda",
+      "when": "2026-05-26T23:00:00.000Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
