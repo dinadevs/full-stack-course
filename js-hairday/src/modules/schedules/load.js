@@ -12,5 +12,5 @@ export async function schedulesDay() {
 
   schedulesShow({dailySchedules})
   
-  hoursLoad({date})
+  hoursLoad({date, dailySchedules})
 }
