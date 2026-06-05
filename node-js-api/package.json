@@ -8,5 +8,5 @@
   },
   "author": "Edna",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module"
 }
